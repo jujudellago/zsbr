@@ -57,7 +57,7 @@
 	"wpackagist-plugin/obfuscate-email" : "*",	
 	"wpackagist-plugin/oauth-twitter-feed-for-developers" : "*",		
 	"wpackagist-plugin/cloudflare" : "*", 	
-    "roots/soil": "3.7.0",
+    "roots/soil": "3.7.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
