@@ -16,7 +16,6 @@ web/app/uploads/*
 !web/app/plugins/wp-smush-pro
 !web/app/plugins/speakup-email-petitions
 !web/app/plugins/revslider
-!web/app/plugins/
 
 config/secrets.yml
 *.sql
