@@ -3,7 +3,7 @@
     // Environment Specific configuration variables
     define ('ENV','DEV');
     #define ('DOC_BASE',realpath(dirname(__FILE__).'/../../../../').'/');
- 	define ('DOC_BASE',realpath(dirname(__FILE__).'/../../../../../web/').'/');
+ 	define ('DOC_BASE',realpath(dirname(__FILE__).'/../../../../../web').'/');
 	if (!function_exists('get_bloginfo')){
 		require_once( DOC_BASE . '/wp/wp-load.php' );
 	}

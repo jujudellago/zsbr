@@ -471,9 +471,10 @@
 			if (!is_uploaded_file($uploaded_file)){
 				return PEAR::raiseError("$uploaded_file is not an uploaded file");
 			}
+			$basedir=$this->getBaseDirectory();
 			$newLocation = $this->getBaseDirectory().$file_name;
 			if (!move_uploaded_file($uploaded_file,$newLocation)){
-				return PEAR::raiseError("Unable to move the uploaded file $uploaded_file");
+				return PEAR::raiseError("Unable to move the uploaded file $uploaded_file  in new location $newLocation, basedir: $basedir");
 			}
 			chmod($newLocation,0666);
 			return $this->checkInFile($newLocation);

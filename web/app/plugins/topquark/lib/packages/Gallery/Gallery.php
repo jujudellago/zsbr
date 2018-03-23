@@ -99,7 +99,8 @@ class Gallery extends Parameterized_Object
                         $ImageLibrarian->$function($dimension_callbacks[$type]);
                     }
                 }
-                $results = $ImageLibrarian->checkInUploadedFile($uploaded_filename,$this->getDirectoryName()."/".$filename);
+#                $results = $ImageLibrarian->checkInUploadedFile($uploaded_filename,$this->getDirectoryName()."/".$filename);
+                $results = $ImageLibrarian->checkInUploadedFile($uploaded_filename,$this->getDirectoryName().$filename);
                 if (PEAR::isError($results)){
                         return $results;
                 }
