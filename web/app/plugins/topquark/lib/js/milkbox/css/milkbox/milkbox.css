@@ -1,0 +1,125 @@
+/* MILKBOX */
+
+#mbOverlay {
+	position: absolute;
+	left: 0;
+	width:100%;
+	background:#000;
+	background-position: center top; /* horizontally centers the background image */
+	z-index:100000; /* take THAT WordPress admin bar */
+	cursor: pointer;
+}
+
+#mbCenter {
+	/* for default width and height, see the js options */
+	position: absolute;
+	z-index:100001; /* take THAT WordPress admin bar */
+	overflow:hidden;
+	left: 50%;
+	top:10%;/* overwritten in the js options to properly position the milkbox when activated in a scrolled window */
+	background-color: #fff;/* set the Milkbox background color */
+	border: 5px solid #000;/* set the Milkbox border */
+	margin:0; padding:5px;/* set the Milkbox padding */
+}
+
+.mbLoading{ background: #fff url(loading.gif) no-repeat center; }/* IMAGE: loading gif */
+
+#mbImage{ position:absolute; top:0px; left:50%; margin:5px; padding:0; height:0; border:none; font-size:0; overflow:hidden; }
+#mbImageAlt{ position:absolute; top:0px; left:50%; margin:5px; padding:0; height:0; border:none; font-size:0; overflow:hidden;}
+
+.clear{ clear:both; height:0; margin:0; padding:0; font-size:0; overflow:hidden; }
+
+
+/* *** BOTTOM *** */
+
+#mbBottom { 
+	/* set text options */
+	font-family: Verdana, Arial, Geneva, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	padding-top:8px;
+	margin:0;
+}
+
+/* navigation */
+/* be careful if you change buttons dimensions */
+
+#mbNavigation{
+	position:absolute;
+	background:white;
+	display:block;
+	border: 5px solid #2a2a2a;/* set the Milkbox border */
+	top:0px;
+	right:0px;
+	margin-left: -40px;
+	width:200px;
+	padding:3px;
+	z-index:100001; /* take THAT WordPress admin bar */
+}
+
+#mbCount{ 
+	width:100%; 
+	overflow:hidden;
+	padding-top:1px;
+	clear:right;
+	text-align:right;
+	font-size:11px; /* count font size */
+}
+
+#mbCloseLink, #mbPrevLink, #mbNextLink, #mbPlayLink, #mbPauseLink{
+	outline:none;
+	display:block;
+	float:right;
+	height:20px;
+	cursor: pointer;
+}
+
+#mbPrevLink, #mbNextLink, #mbPlayLink, #mbPauseLink{ width:17px; }
+#mbPrevLink{ background: transparent url(prev.gif) no-repeat; }/* IMAGE: prev */
+#mbNextLink{ background: transparent url(next.gif) no-repeat; }/* IMAGE: next */
+#mbPlayLink{ background: transparent url(play.gif) no-repeat; }/* IMAGE: play */
+#mbPauseLink{ background: transparent url(pause.gif) no-repeat; }/* IMAGE: pause */
+
+/* NOTE: doesn't work in ie6, so, just see the js options :) */
+a#mbPrevLink:hover,a#mbNextLink:hover,a#mbCloseLink:hover,a#mbPlayLink:hover,a#mbPauseLink:hover { background-position: 0 -23px; }
+
+#mbCloseLink {
+	width:20px;
+	background: transparent url(close.gif) no-repeat;/* IMAGE: close */
+}
+
+/* description */
+
+#mbDescription{
+	position:absolute;
+	bottom:0px;
+	margin-right:0px;
+	padding:0px 0px 0 0;
+	font-weight: normal;
+}
+
+#mbSpeedSlider{
+	clear:both;
+}
+
+p#mbSpeedSliderLabel{
+	margin-top:0px;
+	margin-bottom:2px;
+	text-align:right;
+	font-size:11px;
+}
+
+#mbSpeedSliderTrack {
+	margin-top:10px;
+	width: 75px;
+	height: 8px;
+	background: #eee;
+	clear:both;
+}
+#mbSpeedSliderKnob {
+	background: #545454;
+	width: 8px;
+	height: 8px;
+}

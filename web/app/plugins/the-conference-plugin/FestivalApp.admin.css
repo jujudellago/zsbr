@@ -1,0 +1,38 @@
+select{
+	height:auto !important;
+	background:lightyellow !important;
+}
+
+table.schedule_table{
+	border:1px solid black !important;
+}
+
+table.schedule_table td{
+	border:1px solid black !important;
+	padding:3px;
+}
+.ShowListingCell p.show-embedded-schedule{
+	text-align:left !important;
+}
+
+.ShowListingColumnHeadingSponsor{
+	text-align:center;
+}
+
+.shortcode-details h3{
+	text-transform:uppercase;
+}
+.shortcode-details{
+	border:1px solid black;
+	padding:2.0em;
+	margin-bottom:2.0em;
+}
+table.ObjectListTable{
+	table-layout:auto;
+}
+.ObjectListTable .main-action{
+	font-size:2.0em;
+}
+.ObjectListTable .row-actions a{
+	display:block;
+}

@@ -1,0 +1,127 @@
+#tqp_admin_wrapper{
+	margin:15px 15px 0 5px;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+} 
+
+#tqp_admin_nav{
+	margin-top:5px;
+	padding:0px 0px 0px 55px;
+	background:transparent url(images/top-quark-mini-logo.png) 0% 3px no-repeat;
+	height:80px;
+	text-align:left;
+}
+#tqp_admin_left_nav{
+	font-size:11px;
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+}
+#tqp_admin_nav_title{
+	font:italic 24px/35px Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+	color:#464646;
+	margin:0px;
+}
+
+#tqp_admin_wrapper #tqp_main_menu .tqp_main_menu_item{
+	border:1px solid #464646;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	padding:10px;	
+	margin:0px auto 20px auto;
+	width:50%;
+	background:#e9e9e9;
+	background:-moz-linear-gradient(100% 100% 90deg, #bcbcbc, #e9e9e9) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e9e9e9), to(#bcbcbc));	
+}
+
+#tqp_admin_wrapper #tqp_main_menu .tqp_main_menu_item h3{
+	margin:0px;
+	text-shadow:0 1px 0 #FFFFFF;
+}
+#tqp_admin_wrapper #tqp_main_menu .tqp_main_menu_item h3 a{
+	text-decoration:none;
+}
+
+#tqp_admin_wrapper .tqp_admin_form .tab{
+	background:url(images/gray-grad.png);
+	border:1px solid #DFDFDF;
+	-moz-border-radius:6px 6px 0px 0px;
+	border-radius:6px 6px 0px 0px;
+	padding:4px;
+	color:#464646;
+	text-shadow:0 1px 0 #FFFFFF;
+	cursor:pointer;
+	text-align:center;
+}
+#tqp_admin_wrapper .tqp_admin_form .tab-hi{
+	background:#969696;
+	background:-moz-linear-gradient(100% 100% 90deg, #464646, #969696) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#969696), to(#464646));	
+	-moz-border-radius:6px 6px 0px 0px;
+	border-radius:6px 6px 0px 0px;
+	padding:4px;
+	color:#FFFFFF;
+	text-shadow:0 1px 0 #333333;
+	text-align:center;
+}
+#tqp_admin_wrapper .tqp_admin_form .tab-content-wrapper{
+	border:1px solid #dfdfdf;
+	padding:8px;
+	background:#fafafa;
+	overflow:auto;
+}
+#tqp_admin_wrapper textarea{
+	font-family:"Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+	font-size:14px;
+}
+#tqp_admin_wrapper .hidden_tab{
+	display:none;
+}
+
+#Update_Form select{
+	height: auto;
+}
+
+table.ShowListingTable, table.ShowListingTable td{
+	border:1px solid grey;
+	border-collapse:collapse;
+	padding:4px;
+}
+
+/**
+ Sad that I have to put this in here, but you can't win 'em all
+ this is specific to the topFestival plugin.  
+ */
+.ShowListingHeading{
+        font-size: 1.3em;
+        font-weight:bold;
+}
+.ShowListingTitle{
+        margin:0;
+}
+.ShowListingArtists{
+        margin:2px 0 0 0;
+}
+.ShowListingDescription{
+        margin:0 0 2px 0;
+}
+.ShowListingCell{
+        vertical-align: top;
+        padding:2px;
+        text-align:center;
+}
+.ShowListingBlankCell{
+        background-color:#ffeeff;
+}
+.ShowListingColumnHeading{
+        font-weight:bold;
+        text-align:center;
+}
+.ShowListingRowHeading{
+        text-align:right;
+}
+.ShowListingColumnHeadingCell{
+        background-color:#eeeeee;
+}
+.ShowListingRowHeadingCell{
+        background-color:#eeeeee;
+}
+        

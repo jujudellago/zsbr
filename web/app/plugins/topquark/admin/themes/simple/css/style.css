@@ -1,0 +1,306 @@
+body{ 
+	font-family: Arial, Helvetica, sans-serif; 
+	line-height: 1.1;
+	color: #111111;
+	font-size: 0.9em;
+	margin: 10 10 10 10;
+}
+
+td { 
+	font-family: Arial, Helvetica, sans-serif; 
+	line-height: 1.1;
+	color: #111111;
+	font-size: 0.9em;
+}
+
+.page_title {
+	font-size: 2.0em;
+	color: #522F60;
+	text-align: center;
+	margin-top: 1.0em;
+	margin-bottom: 1.0em;
+}
+
+.largeprint {
+	font-size: 1.3em;
+}
+.smallprint {
+	font-size: 0.7em;
+}
+
+.smallish {
+	font-size: 0.8em;
+}
+
+.verysmall {
+	line-height: 0.1;
+	font-size: 0.1em;
+}
+
+.credit {
+	font-size: 0.7em;
+	font-style:italic;
+}
+
+a { color: blue; }
+
+.outlined_box {
+	background:url("../images/gray-grad.png") repeat-x scroll left top #DFDFDF;
+	text-shadow:0 1px 0 #FFFFFF;
+	-moz-border-radius:6px;
+	border-radius:6px;
+}
+
+#title{
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration:underline;
+}
+
+/* forms elements */
+input { 
+	font-size: 11px; 
+	font-family: verdana, arial, helvetica, sans-serif; 
+	color: #333333;  
+	padding-left:3px;
+	background-color: #f7f7f7;
+}
+textarea {
+	background-color: #f7f7f7;
+	color: #333333; 
+	width: 430px; 
+	font-size: 11px; 
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+select {
+	font-size: 11px; 
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.formButton {
+	background-color: #ece9e3;
+	color: #676767;
+	font-weight: bold;
+	text-align:center;
+}
+
+.tab 		{  border-style:solid; border-width:1px;border-color: black;
+		   background-color:white; color: #000000;
+		   -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px;
+		   text-align:center;
+		   text-decoration:underline; font-weight:bold; font-size:13px;
+		   cursor: pointer;
+		   padding:5px; margin-left:10px;
+		}
+
+.tab-hi 	{  border-style:solid; border-width:1px;border-color: black;
+		   background-color:#000099 !important; color:#ffffff;
+		   -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px;
+		   text-align:center;
+		   text-decoration:underline; font-weight:bold; font-size:13px;
+		   cursor: pointer;
+		   padding:5px; margin-left:10px;
+		}
+
+td.tabspacer	{  border-bottom-width: 1px; border-bottom-style:solid;
+                   border-color: black;
+		}
+		
+.menu_items {
+	color: lightblue;
+}		
+
+table.ShowListingTable, table.ShowListingTable td{
+	border:1px solid grey;
+	border-collapse:collapse;
+	padding:4px;
+}
+
+.ShowListingHeading{
+        font-size: 1.3em;
+        font-weight:bold;
+}
+.ShowListingTitle{
+        margin:0;
+}
+.ShowListingArtists{
+        margin:2px 0 0 0;
+}
+.ShowListingDescription{
+        margin:0 0 2px 0;
+}
+.ShowListingCell{
+        vertical-align: top;
+        padding:2px;
+        text-align:center;
+}
+.ShowListingBlankCell{
+        background-color:#ffeeff;
+}
+.ShowListingColumnHeading{
+        font-weight:bold;
+        text-align:center;
+}
+.ShowListingRowHeading{
+        text-align:right;
+}
+.ShowListingColumnHeadingCell{
+        background-color:#eeeeee;
+}
+.ShowListingRowHeadingCell{
+        background-color:#eeeeee;
+}
+        
+
+#categorylist {
+	list-style-type: none;
+	margin: 10 0 0 10;
+	text-align: left;
+}
+
+#categorylist li {
+	float: left;
+	margin-right: 6px;
+	margin-bottom: 5px;
+	width: 30%;
+}
+
+#categorylist li.specialcategory {
+	clear: both;
+	width: 100%;
+}
+
+img.Watermark{
+	opacity:0.1;
+	filter: alpha(opacity=10);
+}
+
+.GigListingTable{
+	width:100%;
+	margin:3px;
+}
+.GigListHeader{
+	background: lightblue;
+}
+.GigLegend{
+	margin-left:5px;
+	margin-top:0px;
+}
+.GigDateNavigation{
+	margin-right:0px;
+	float:right;
+	margin-bottom:2px;
+}
+.GigListToday{
+	background: #dddddd;
+}
+.GigListNotToday{
+	background: #eeeeee;
+}
+
+table.GigListingTable td.GigListData{
+	vertical-align:top;
+	text-align:left;
+	height:60px;
+}
+
+div.AlignCenter{
+	width:90%;
+	margin:5px auto;
+	text-align:center;
+}
+
+#mainbar{
+	width:90%;
+	margin:5px auto;
+}
+
+table.ObjectListTable{
+	border:1px solid black;
+}
+table.ObjectListTable td{
+	padding:5px;
+}
+
+/* Glossary Styles */
+div#GlossaryListing{
+	width:80%;
+	margin-left:10%;
+}
+table.glossary_listing{
+	border-collapse:collapse;
+	width:100%;
+	text-align:left;
+	border: 1px solid #83b5b6;
+}
+table.glossary_listing td, table.glossary_listing th{
+	padding:5px;
+	border: 1px solid #83b5b6;
+	font-size:10pt;
+	line-height:1.5em;
+	vertical-align:top;
+        background:white;
+}
+
+div.glossary_filter_options{
+	text-align:left;
+    margin-bottom:10px;
+	margin-top:10px;
+	width:80%;
+	margin-left:10%;
+}
+div.glossary_filter_options input{
+	font-size:1.0em;
+	padding:3px;
+	border:1px solid #83b5b6;
+}
+div.glossary_filter_options input.GlossaryButton{
+	background-color: lightblue;
+	cursor:pointer;
+	padding:2px;
+}
+
+div.glossary_filter_options a{
+	background-color: lightblue;
+	color:black;
+	display:inline-block;
+	min-width:15px;
+	text-align:center;
+	padding:5px;
+	margin:0px 5px 5px 0px;
+	border:1px solid #83b5b6;
+	text-decoration:none;
+}
+div.glossary_filter_options a.glossary_category{
+        min-width:100px;
+}
+
+div.glossary_filter_options a:hover{
+	background-color:black;
+	color:white;
+        text-decoration:none;
+}
+
+div.glossary_filter_options a.current_filter{
+	background:black;
+	color:white;
+}
+a.glossary_markup{
+       text-decoration:none;
+		color:black;
+       border-bottom:1px dotted #0f8d20;
+}
+
+a.glossary_markup:hover{
+       text-decoration:underline;
+       border-bottom:1px solid #83b5b6;
+}
+
+span.found_term{
+       font-weight:bold;
+       color:black;
+}
+#Update_Form select{
+	height: auto;
+}

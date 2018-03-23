@@ -1,0 +1,45 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*/
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+!web/app/plugins/LayerSlider
+!web/app/plugins/topquark
+!web/app/plugins/the-conference-plugin
+!web/app/plugins/logos-showcase
+!web/app/plugins/yabo-codes
+!web/app/plugins/youtube_wpress
+!web/app/plugins/js_composer
+!web/app/plugins/wp-smush-pro
+!web/app/plugins/speakup-email-petitions
+!web/app/plugins/revslider
+!web/app/plugins/
+
+config/secrets.yml
+*.sql
+
+# WordPress
+web/wp
+web/.htaccess
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant

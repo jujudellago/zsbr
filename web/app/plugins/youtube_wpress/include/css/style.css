@@ -1,0 +1,18 @@
+.ywpress-video-item {
+	display: block;
+	    padding-bottom: 15px;
+	    width: 278px;
+	 padding-left: 20px;
+}
+.home .ywpress-video-item {
+	 padding-left: 0px;
+}
+
+.ywpress-video-item img {
+	padding: 3px;
+	border: 1px solid transparent;
+}
+
+.ywpress-video-item img:hover {
+	border: 1px solid #bebebe;
+}

@@ -1,0 +1,111 @@
+/**********************************
+* Control Pane
+**********************************/
+#schedule-control-drawer{
+	width:150px;
+}
+#schedule-control-pane{
+	text-align:center;
+	margin:10px;
+}
+#schedules-list li{
+	background:#eee;
+	margin-bottom:5px;
+	padding:10px;
+	border:1px solid black;
+	cursor:pointer;
+	font-size:12pt;
+}
+#schedules-list .schedule-options li{
+	border:0px;
+	background:white;
+	font-size:10pt;
+	border:1px solid #ccc;
+}
+
+#schedules-list .schedule-options li.on{
+	background:lightblue;
+}
+#schedules-list .schedule-options li.loading{
+	text-indent:-1000px;
+	overflow:hidden;
+	background-image:url(../images/wpspin_light.gif);
+	background-position:50% 50%;
+	background-repeat:no-repeat;
+}
+
+#schedules-list .schedule-options li.schedule-settings{
+	background:none;
+	border:0px;
+	font-size:8pt;
+}
+
+#schedules-list li#schedule-statistics{
+	display:none;
+}
+
+
+/***********************************
+* Manage Pane
+***********************************/
+#schedule-manage-drawer{
+	border-left:0px;
+}
+#schedule-manage-pane{
+	margin:10px;
+}
+#schedule-refresh{
+	float:left;
+	display:block;
+	height:14px;
+	width:18px;
+	overflow:hidden;
+	text-indent:-1000px;
+	background:url(../images/Refresh.gif) 0px 0px no-repeat;
+	margin-right:4px;
+	margin-top:5px;
+	cursor:pointer;
+}
+#schedule-refresh.off{
+	display:none;
+}
+
+/***********************************
+* Making the Schedule Table Resizable
+***********************************/
+.ShowListingTableWrapper{
+	display:inline-block;
+}
+.ShowListingTable{
+	width:100%;
+	height:100%;
+}
+.ShowListingRowHeadingCell.on-right p{
+	text-align:left;
+}
+.ShowListingTableWrapper .ui-resizable-handle.ui-resizable-e{
+	width:3px;
+	background:black;
+}
+
+/*
+ * jQuery UI Resizable @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Resizable#theming
+ */
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}	</style>
+

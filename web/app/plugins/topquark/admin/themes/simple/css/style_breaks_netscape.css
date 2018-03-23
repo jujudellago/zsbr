@@ -1,0 +1,21 @@
+
+/* forms elements */
+input { 
+	border: 1px solid #CCCCCC;
+}
+
+textarea {
+	border: #CCCCCC 1px solid; 
+}
+
+select {
+	border: 1px solid #CCCCCC; 
+}
+
+.visible_tab {
+	display: inline;
+}
+
+.hidden_tab {
+	display: none;
+}

@@ -1,0 +1,9 @@
+x When only one speaker, publishing schedules results in Fatal error: Call to a member function getParameters() on a non-object in user.functions.php line 708
+x Shortcode preview wptexturize's the output, resulting in curly quotes, which mess up the shortcode
+x CSS Formatting issues in WP 3.3.1
+- "class json" seems to exist elsewhere.  put a class_exists() around it - in lib/package/Common/class.json.php
+x artist_shows doesn't do the "appeared in" logic properly
+- FAQ references [the_festival_lineup] shortcode incorrectly
+- printable version shows scrollbars
+1. Is there meant to be a link for removing a host for a session once added?
+2. Sessions that have hosts do not export correctly out of the database from the import/export tool. Seems like the host column gets in the way of the room number.

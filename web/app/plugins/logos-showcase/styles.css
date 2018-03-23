@@ -1,0 +1,339 @@
+/* TOOLTIP */
+
+.ui-tooltip {
+	padding:8px;
+	position:absolute;
+	z-index:9999;
+	-o-box-shadow: 0 0 5px #aaa;
+	-moz-box-shadow: 0 0 5px #aaa;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+	
+}
+/* Fades and background-images don't work well together in IE6, drop the image */
+* html .ui-tooltip {
+	background-image: none;
+}
+body .ui-tooltip { border-width:2px; }
+
+.ui-tooltip, .lsarrow:after {
+background: #666666;
+}
+.ui-tooltip {
+	
+padding: 10px 20px;
+color: #FFFFFF;
+border-radius: 2px;
+background: #666666;
+/*box-shadow: 0 0 7px black;*/
+}
+.lsarrow {
+width: 70px;
+height: 16px;
+overflow: hidden;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+bottom: -16px;
+}
+.lsarrow.top {
+top: -16px;
+bottom: auto;
+}
+.lsarrow.left {
+left: 20%;
+}
+.lsarrow:after {
+content: "";
+position: absolute;
+left: 20px;
+top: -20px;
+width: 25px;
+height: 25px;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+tranform: rotate(45deg);
+}
+.lsarrow.top:after {
+bottom: -20px;
+top: auto;
+}
+
+
+/* BOX Highlight Settings */
+
+.lshowcase-boxhighlight {
+	margin:10px;
+	
+	/* Nothing on normal state */
+}
+
+
+.lshowcase-boxhighlight:hover {
+	
+	-webkit-box-shadow:0 0 10px #CCC; 
+	-moz-box-shadow: 0 0 10px #CCC; 
+	box-shadow:0 0 10px #CCC; 
+	
+}
+
+
+
+/* GRAYSCALE SETTINGS */
+
+.lshowcase-grayscale, 
+.lshowcase-hover-grayscale {
+	 filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+	opacity:0.7;
+	margin:10px;
+	
+    
+}
+
+.lshowcase-hover-grayscale:hover {
+	  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+	opacity:1;
+}
+
+
+.lshowcase-clear-both {
+	clear:both;
+	height:0px;
+}
+
+/* Horizontal Carousel Settings */
+/* More classes at /bxslider/jquery.bxslider.css */
+
+.lshowcase-wrap-hcarousel {	
+	display:inline-block;
+	vertical-align:middle;
+}
+.lshowcase-slide {
+	vertical-align: middle;
+    display: inline-block;
+    float: none !important;
+	
+}
+
+/* NORMAL GRID SETTINGS */
+
+.lshowcase-wrap-normal {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+ .lshowcase-box-normal {
+	 float:left;
+	 vertical-align: middle;
+	 display:inline-block;
+	 }
+ 
+.lshowcase-boxInner-normal {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+	padding:5px;
+	margin:5px;
+	
+	}
+
+.lshowcase-boxInner-normal img {
+	margin:0 auto;
+	text-align:center;
+}
+
+/* RESPONSIVE GRID SETTINGS */
+
+
+    .lshowcase-box-12 {
+      float: left;
+      position: relative;
+      width:8.3%;
+      padding-bottom:8.3%;
+    }
+	
+	.lshowcase-box-11 {
+      float: left;
+      position: relative;
+      width:9.09%;
+      padding-bottom:9.09%;
+    }
+	
+	.lshowcase-box-10 {
+      float: left;
+      position: relative;
+      width:10%;
+      padding-bottom:10%;
+    }
+	
+	.lshowcase-box-9 {
+      float: left;
+      position: relative;
+      width:11.11%;
+      padding-bottom:11.11%;
+    }
+	
+	.lshowcase-box-8 {
+      float: left;
+      position: relative;
+      width:12.5%;
+      padding-bottom:12.5%;
+    }
+	
+	.lshowcase-box-7 {
+      float: left;
+      position: relative;
+      width:14.28%;
+      padding-bottom:14.28%;
+    }
+	
+	.lshowcase-box-6 {
+      float: left;
+      position: relative;
+      width:16.6%;
+      padding-bottom:16.6%;
+
+    }
+	
+	.lshowcase-box-5 {
+      float: left;
+      position: relative;
+      width:20%;
+      padding-bottom:20%;
+    }
+	
+	.lshowcase-box-4 {
+      float: left;
+      position: relative;
+      width:25%;
+      padding-bottom:25%;
+    }
+	
+	.lshowcase-box-3 {
+      float: left;
+      position: relative;
+      width:33.3%;
+      padding-bottom:33.3%;
+    }
+	.lshowcase-box-2 {
+      float: left;
+      position: relative;
+      width:50%;
+      padding-bottom:50%;
+    }
+	.lshowcase-box-1 {
+      float: left;
+      position: relative;
+      width:100%;
+      padding-bottom:100%;
+    }
+	
+	
+    .lshowcase-boxInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      
+	  padding:5px;
+	  }
+	  
+    .lshowcase-boxInner img {
+      width: 100%;
+	  position:absolute;top:0;bottom:0;margin:auto;
+	  
+    }
+	
+	@media only screen and (max-width : 480px) {
+      /* Smartphone view: 1 tile */
+      .lshowcase-box-1,.lshowcase-box-2,.lshowcase-box-3,.lshowcase-box-4,.lshowcase-box-5,.lshowcase-box-6,.lshowcase-box-8,.lshowcase-box-12 {
+        width: 100%;
+        padding-bottom: 100%;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 4 tiles */
+	  
+     .lshowcase-box-4, .lshowcase-box-5,.lshowcase-box-6,.lshowcase-box-8,.lshowcase-box-12 {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+	  
+	 .lshowcase-box-3 {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+	  
+	  .lshowcase-box-2 {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+	  .lshowcase-box-1 {
+		 width: 100%;
+        padding-bottom: 100%;  
+	  }
+	  
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 5 tiles */
+ 	  .lshowcase-box-5,.lshowcase-box-6,.lshowcase-box-8,.lshowcase-box-12 {
+        width: 20%;
+        padding-bottom: 20%;
+      }
+	  
+     .lshowcase-box-4 {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+	  
+	 .lshowcase-box-3 {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+	  
+	  .lshowcase-box-2 {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+	  .lshowcase-box-1 {
+		 width: 100%;
+        padding-bottom: 100%;  
+	  }
+	  
+	  
+    }
+    @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+      /* Medium desktop: 5 tiles */
+	  
+	  .lshowcase-box-5,.lshowcase-box-6,.lshowcase-box-8,.lshowcase-box-12 {
+        width: 20%;
+        padding-bottom: 20%;
+      }
+	  
+     .lshowcase-box-4 {
+        width: 25%;
+        padding-bottom: 25%;
+      }
+	  
+	 .lshowcase-box-3 {
+        width: 33.3%;
+        padding-bottom: 33.3%;
+      }
+	  
+	  .lshowcase-box-2 {
+        width: 50%;
+        padding-bottom: 50%;
+      }
+	  .lshowcase-box-1 {
+		 width: 100%;
+        padding-bottom: 100%;  
+	  }
+	  
+    }
+   

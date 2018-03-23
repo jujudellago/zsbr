@@ -1,0 +1,150 @@
+.ShowListingTableWrapper {
+   clear: both;
+   overflow: auto;
+   max-height:600px;
+   padding: 10px;
+}
+table.ShowListingTable{
+	table-layout: auto;
+	width: 100%;
+	height:100%;
+	border:1px solid black;
+	border-collapse:collapse;
+	border-color:black;
+	font-size:10pt;
+	line-height:1.2em;
+}
+.ShowListingTable td{
+	vertical-align: top;
+	padding:7px;
+	border:1px solid black;
+}
+
+.ShowListingTable td p{
+	text-align:center !important;	
+}
+
+.ShowListingTable td a,.ShowListingTable td a:visited{
+	color:black !important;
+	font-weight:normal;
+}
+
+.ShowListingHeading{
+        font-weight:bold;
+		margin-top:25px;
+		margin-bottom:5px;
+}
+.ShowListingTitle{
+        margin:0;
+		font-weight:bold !important;
+		text-decoration:none;
+}
+.ShowListingTitle a,.ShowListingTitle a:visited{
+		font-weight:bold !important;
+		color:black !important;
+		text-decoration:none;
+}
+.ShowListingTitle a:hover{
+		text-decoration:underline;
+}
+.ShowListingArtists{
+        margin:2px 0 0 0;
+}
+.ShowListingArtists a,.ShowListingArtists a:visited{
+		color:black !important;
+		text-decoration:none;
+}
+.ShowListingArtists a:hover{
+		text-decoration:underline;
+}
+.ShowListingDescription{
+        margin:0 0 2px 0;
+}
+.ShowListingCell{
+        vertical-align: top;
+        padding:2px;
+        text-align:center;
+        background-color:#fff;
+}
+.ShowListingBlankCell{
+        background-color:#d9d9d9;
+}
+
+.ShowListingColumnHeading{
+        font-weight:bold;
+        text-align:center;
+		margin-bottom:0px;
+		color:#000000 !important;
+}
+.ShowListingColumnHeadingSponsor{
+		font-style:italic;
+        text-align:center;
+		margin-top:10px !important;
+		color:white;
+}
+.ShowSponsor{
+		font-style:italic;
+        text-align:center;
+		margin-top:10px !important;
+}
+.ShowListingRowHeading{
+        text-align:right;
+}
+.ShowListingColumnHeadingCell{
+    	background-color:#d9d9d9;
+		color:#000000 !important;
+		vertical-align:bottom !important;
+}
+.ShowListingRowHeadingCell{
+        background-color:#d9d9d9;
+		color:#000000 !important;
+		height:60px !important;
+}
+
+.BandMemberShowCell {
+	background-color:#b29307;
+}
+
+.HighlightedShowCell {
+	background-color:#f2d347;
+}
+
+.MainActShowCell {
+	background-color:#f2d347;
+}
+.ShowDetailHighlighted {
+	border:1px solid black;
+	padding:0 10px 10px 10px;
+	background:#f8b5b9;
+}
+	
+.ScheduleList{
+	margin-top:25px;
+	font-weight:bold;
+	text-align:center !important;
+}
+
+.ScheduleList a,.ScheduleList a:visited{
+	color:black !important;
+	font-weight:normal;
+}
+
+
+.PrintableList{
+	margin-top:5px;
+	text-align:center !important;
+}
+.PrintableList a{
+	font-weight:normal !important;
+}
+.ScheduleName{
+	margin-top:35px;
+}
+.ShowListingColumnHeading{
+}
+td.hidden{
+	display:none;
+}
+.ShowListingCell p.show-embedded-schedule{
+	text-align:left !important;
+}
