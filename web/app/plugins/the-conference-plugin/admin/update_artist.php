@@ -83,7 +83,7 @@
         			$_POST['ArtistWebsite'] = "http://" . $_POST['ArtistWebsite'];
         		}
 			   if ($_POST['ArtistVideo'] != "" and !strpos($_POST['ArtistVideo'],":")){
-		       	$_POST['ArtistVideo'] = "http://" . $_POST['ArtistVideo'];
+		       		#$_POST['ArtistVideo'] = "http://" . $_POST['ArtistVideo'];
 		       }
 		
 

@@ -1,11 +1,11 @@
 <?php
 	header('Content-type: text/javascript');
 	if (!function_exists('wp')){
-		require_once( realpath(dirname(__FILE__) . '/../../../../../wp-load.php') );
+		require_once( realpath(dirname(__FILE__) . '/../../../../../wp/wp-load.php') );
 	}
 ?>
 getAjaxURL = function(){
-	return '<?php echo get_bloginfo('url'); ?>/wp-content/plugins/topquark/lib/packages/Common/ajax.php'+'?nocache='+new Date().getTime();
+	return '<?php echo get_bloginfo('url'); ?>/app/plugins/topquark/lib/packages/Common/ajax.php'+'?nocache='+new Date().getTime();
 }
 
 getWPAjaxURL = function(){

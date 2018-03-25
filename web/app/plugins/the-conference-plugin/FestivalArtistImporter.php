@@ -58,9 +58,9 @@ class ArtistImporter extends Importer{
 		if ($Object->getParameter('ArtistWebsite') != '' and strpos($Object->getParameter('ArtistWebsite'),'http://') === false){
 			$Object->setParameter('ArtistWebsite','http://'.$Object->getParameter('ArtistWebsite'));
 		}
-		if ($Object->getParameter('ArtistVideo') != '' and strpos($Object->getParameter('ArtistVideo'),'http://') === false){
-			$Object->setParameter('ArtistVideo','http://'.$Object->getParameter('ArtistVideo'));
-		}
+	   # if ($Object->getParameter('ArtistVideo') != '' and strpos($Object->getParameter('ArtistVideo'),'http://') === false){
+	   # 	$Object->setParameter('ArtistVideo','http://'.$Object->getParameter('ArtistVideo'));
+	   # }
 		
 		if ($Object->getParameter('ArtistImage') != ''){
 			$this->current_image_url = $Object->getParameter('ArtistImage');
