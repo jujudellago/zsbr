@@ -13,7 +13,7 @@ server 'flum.ftp.sharedbox.com', user: 'flum_zsyabo', roles: %w{web app db}
 set :tmp_dir, "/home/clients/15e0b62c05a08de02c6eae48e0705717/tmp"
 
 
-set :deploy_to, -> { "/home/clients/15e0b62c05a08de02c6eae48e0705717/bedrock" }
+set :deploy_to, -> { "/home/clients/15e0b62c05a08de02c6eae48e0705717/production" }
 
 
 SSHKit.config.command_map[:composer] = "php-5.6 /home/clients/15e0b62c05a08de02c6eae48e0705717/bin/composer/composer.phar"
