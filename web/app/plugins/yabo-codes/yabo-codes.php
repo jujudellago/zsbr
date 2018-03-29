@@ -36,7 +36,7 @@ function ls_enable_required_js_in_wordpress() {
 }
 add_action('init','ls_add_css_scripts');
 function ls_add_css_scripts() {
-	wp_enqueue_style( 'yabo-codes-contentslider', '/wp-content/plugins/yabo-codes/css/yabo-codes.css');
+	wp_enqueue_style( 'yabo-codes-contentslider', '/../app/plugins/yabo-codes/css/yabo-codes.css');
 }
 
 add_action('wp_footer', 'add_ls_onload' );
