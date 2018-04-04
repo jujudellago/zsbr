@@ -15,6 +15,13 @@ jQuery.noConflict()(function($){
 		    target: null,
 		    remove: false
 		});
+		
+		$(".colorboxes .vc_col-sm-6 .wpb_text_column").matchHeight({
+		    byRow: true,
+		    property: 'height',
+		    target: null,
+		    remove: false
+		});
 		//$(".aheight_row .aheight .wpb_wrapper").matchHeight({
 		//    byRow: true,
 		//    property: 'height',

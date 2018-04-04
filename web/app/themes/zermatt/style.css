@@ -168,7 +168,8 @@ p.big-em{
 .colorboxes .darkblue  .wpb_text_column .wpb_wrapper,
 .colorboxes .blue   .wpb_text_column    .wpb_wrapper,
 .colorboxes .clearblue  .wpb_text_column .wpb_wrapper,
-.colorboxes .bluegrey .wpb_text_column  .wpb_wrapper{
+.colorboxes .bluegrey .wpb_text_column  .wpb_wrapper,
+.colorboxes .whiteborder .wpb_text_column  .wpb_wrapper{
 
 	padding:15px;
 }
@@ -180,6 +181,11 @@ p.big-em{
 .colorboxes .clearblue  .wpb_wrapper,
 .colorboxes .bluegrey  .wpb_wrapper{
 	font:#fff;
+	text-align:left;
+}
+
+.colorboxes ..whiteborder  .wpb_wrapper
+{
 	text-align:left;
 }
 
@@ -198,7 +204,11 @@ p.big-em{
 .colorboxes .darkblue    p,
 .colorboxes .blue        p,
 .colorboxes .clearblue   p,
-.colorboxes .bluegrey    p{
+.colorboxes .bluegrey    p,
+.colorboxes .darkblue    em,
+.colorboxes .blue        em,
+.colorboxes .clearblue   em,
+.colorboxes .bluegrey    em{
 	color:#fff;
 }
 
@@ -230,17 +240,30 @@ p.big-em{
 	color:#fff;
 
 }
+
+.intro.big{
+	padding:20px;
+	
+}
+.intro.big p{
+	text-align:left;
+	font-size:1.6em;
+}
+
 .blue.big p,      
 .clearblue.big p, 
 .bluegrey.big p,  
-.darkblue.big p{
+.darkblue.big p,
+.whiteborder p{
 	font-size:1.3em;
 }
 .colorboxes .darkblue{
 	background:#2a5e8e;
+	color:#fff;
 }
 .colorboxes .blue{
 	background:#6296c6;
+	color:#fff;
 }
 .colorboxes .clearblue{
 	background:#c6d7e9;
@@ -248,6 +271,15 @@ p.big-em{
 .colorboxes .bluegrey{
 	background:#a6c1de;
 }
+
+.colorboxes .whiteborder{
+	background:#ffffff;
+	border: 1px solid #eaeaea;
+}
+.colorboxes .whiteborder h3{
+	color:#818181;
+}
+
 
 p:empty{
     display:none;

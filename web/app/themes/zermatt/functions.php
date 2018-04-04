@@ -14,6 +14,12 @@ Function wp_schools_enqueue_scripts() {
 	wp_register_script("zs-scripts", get_stylesheet_directory_uri() ."/js/zs.js" ,array('jquery'),true);
 	wp_enqueue_script('zs-scripts');
 	
+	
+	wp_register_script("addevent", "https://addevent.com/libs/atc/1.6.1/atc.min.js");
+	wp_enqueue_script('addevent');
+
+	
+	
 }
 add_action( 'wp_enqueue_scripts', 'wp_schools_enqueue_scripts', 11);
 
