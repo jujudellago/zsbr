@@ -184,11 +184,15 @@ p.big-em{
 	text-align:left;
 }
 
-.colorboxes ..whiteborder  .wpb_wrapper
+.colorboxes .whiteborder  .wpb_wrapper
 {
 	text-align:left;
 }
-
+.colorboxes .whiteborder  .wpb_wrapper .latest_post_holder h5.latest_post_title,
+.colorboxes .whiteborder  .wpb_wrapper .latest_post_holder h5.latest_post_title a{
+	color:#005d70;		
+	
+}
 .colorboxes.lab_section .darkblue{
 
 }
