@@ -495,3 +495,64 @@ p:empty{
 .widget_twitter .intent-meta a:hover.retweet {
     background-position: -96px center;
 }
+
+.table-striped td,
+.table-striped th{
+	padding:4px;
+}
+
+.table-striped td i{
+	text-align:center;
+	color:#116939;
+}
+.table-striped th.center,
+.table-striped td.center{
+	text-align:center;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.column2 .widget.widget_text h5 {
+    padding-left: 15px;
+}
+.column2 .widget.widget_text ul{
+	    padding-left: 25px;
+}
+.colorboxes .wpb_wrapper
+ul.bigger li a{
+	font-size:20px;
+	font-weight:400;
+}
+
+.white_btn a{
+	color: #000;	
+}
+
+
+.white_btn{
+	display:inline-block;
+	border: 1px solid #aab9d4;
+	color: #000;
+	font-size: 15px;
+	text-decoration: none;
+	zoom: 1;
+	position: relative;
+	z-index: 1;
+	font-family: Roboto,"Helvetica Neue",Helvetica,Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+	color: #000 !important;
+	font-weight: 300;
+	line-height: 100% !important;
+	background-color: #fff;
+	border: 1px solid;
+	border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+	font-size: 15px;
+	text-decoration: none;
+	padding: 13px 12px 12px 13px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
