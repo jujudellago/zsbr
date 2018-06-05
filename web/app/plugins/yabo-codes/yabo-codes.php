@@ -29,14 +29,14 @@ function ls_enable_required_js_in_wordpress() {
 
 	}
 	
-	    wp_register_script('yabo-codes', '/../app/plugins/yabo-codes/js/yabo-codes.js');
+	    wp_register_script('yabo-codes', '/../app/plugins/yabo-codes/js/yabo-codes.js?s=333');
 	    wp_enqueue_script('yabo-codes');
 	
 	
 }
 add_action('init','ls_add_css_scripts');
 function ls_add_css_scripts() {
-	wp_enqueue_style( 'yabo-codes-contentslider', '/../app/plugins/yabo-codes/css/yabo-codes.css');
+	wp_enqueue_style( 'yabo-codes-contentslider', '/../app/plugins/yabo-codes/css/yabo-codes.css?p=234');
 }
 
 add_action('wp_footer', 'add_ls_onload' );
