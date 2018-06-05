@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1af6c48a1df2b5f67d018692594570b2",
-    "content-hash": "5a44d3c526e58e8174b8658ecf4ef81b",
+    "hash": "a4fe1304555332d9df242968cb513bf5",
+    "content-hash": "702703689794a0525261472970a08525",
     "packages": [
         {
             "name": "composer/installers",
@@ -525,6 +525,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
+            "name": "wpackagist-plugin/custom-sidebars",
+            "version": "3.1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-sidebars/",
+                "reference": "tags/3.1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-sidebars.3.1.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-sidebars/"
         },
         {
             "name": "wpackagist-plugin/disqus-comment-system",
