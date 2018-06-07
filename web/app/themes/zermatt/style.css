@@ -529,8 +529,31 @@ ul.bigger li a{
 .white_btn a{
 	color: #000;	
 }
+.white-rounded-box-container{
+	display:block;
 
+	width:100%;
+	text-align:center;	
+}
 
+.white-rounded-box{
+	display: inline-block;
+
+		margin:0 auto;
+		background:#fff;
+		width:60%;
+		color: #3374b5;
+		font-size: 22px;
+
+		text-decoration: none;
+		padding: 8px ;
+		-webkit-border-radius: 6px;
+
+}
+.white-rounded-box a{
+	color: #3374b5!important;
+	text-decoration:none;
+}
 .white_btn{
 	display:inline-block;
 	border: 1px solid #aab9d4;
