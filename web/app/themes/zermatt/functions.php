@@ -73,6 +73,21 @@ function newautop($text)
 	return $newtext;
 }
 
+
+add_shortcode( 'ga_opt_out', 'ga_opt_out_func' );
+function ga_opt_out_func( $atts, $content = null ) { // New function parameter $content is added!
+   extract( shortcode_atts( array(
+      'label' => ''
+   ), $atts ) );
+
+   $content = wpb_js_remove_wpautop($content, true); // fix unclosed/unwanted paragraph tags in $content
+
+   return "<a href='javascript:gaOptout()'>{$content}</a>";
+}
+
+
+
+
 function newtexturize($text)
 {
 	return $text;   
