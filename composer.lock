@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a4fe1304555332d9df242968cb513bf5",
-    "content-hash": "702703689794a0525261472970a08525",
+    "hash": "10273169e53d641565ccdbb90baf8a74",
+    "content-hash": "509aa7ddd03940dcf267181522a19f14",
     "packages": [
         {
             "name": "composer/installers",
@@ -607,26 +607,6 @@
             "homepage": "https://wordpress.org/plugins/gzip-ninja-speed-compression/"
         },
         {
-            "name": "wpackagist-plugin/mappress-google-maps-for-wordpress",
-            "version": "2.48.6",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/mappress-google-maps-for-wordpress/",
-                "reference": "tags/2.48.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mappress-google-maps-for-wordpress.2.48.6.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/mappress-google-maps-for-wordpress/"
-        },
-        {
             "name": "wpackagist-plugin/oauth-twitter-feed-for-developers",
             "version": "2.3.0",
             "source": {
@@ -765,6 +745,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/w3-total-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "7.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/7.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-plugin/wp-maintenance-mode",

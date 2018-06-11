@@ -46,7 +46,6 @@
 	"wpackagist-plugin/gzip-ninja-speed-compression" : "*",
 	"wpackagist-plugin/w3-total-cache" : "*",
 	"wpackagist-plugin/custom-sidebars" : "*",
-	"wpackagist-plugin/mappress-google-maps-for-wordpress": "*",
 	"wpackagist-plugin/wp-optimize" : "*", 
 	"wpackagist-plugin/wp-maintenance-mode" : "*", 	
 	"wpackagist-plugin/wp-team-manager" : "*", 
@@ -58,6 +57,7 @@
 	"wpackagist-plugin/obfuscate-email" : "*",	
 	"wpackagist-plugin/oauth-twitter-feed-for-developers" : "*",		
 	"wpackagist-plugin/cloudflare" : "*", 	
+    "wpackagist-plugin/wordpress-seo" : "*",
     "roots/soil": "3.7.0"
   },
   "require-dev": {
