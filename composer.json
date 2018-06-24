@@ -58,7 +58,6 @@
 	"wpackagist-plugin/oauth-twitter-feed-for-developers" : "*",		
 	"wpackagist-plugin/cloudflare" : "*", 	
     "wpackagist-plugin/wordpress-seo" : "*",
-    "wpackagist-plugin/speakout" : "*",
     "roots/soil": "3.7.0"
   },
   "require-dev": {

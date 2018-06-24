@@ -15,6 +15,7 @@ web/app/uploads/*
 !web/app/plugins/js_composer
 !web/app/plugins/wp-smush-pro
 !web/app/plugins/speakup-email-petitions
+!web/app/plugins/speakout
 !web/app/plugins/revslider
 
 config/secrets.yml

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a8ed11682500ac3ca06f968becf3c287",
-    "content-hash": "ed8932a358f3134737919669f9c22fb3",
+    "hash": "10273169e53d641565ccdbb90baf8a74",
+    "content-hash": "509aa7ddd03940dcf267181522a19f14",
     "packages": [
         {
             "name": "composer/installers",
@@ -705,26 +705,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/safe-redirect-manager/"
-        },
-        {
-            "name": "wpackagist-plugin/speakout",
-            "version": "1.11.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/speakout/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/speakout.zip?timestamp=1527662768",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/speakout/"
         },
         {
             "name": "wpackagist-plugin/twitter-widget-pro",

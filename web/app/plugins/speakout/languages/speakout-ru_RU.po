@@ -1,0 +1,1268 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SpeakOut! Email Petitions\n"
+"POT-Creation-Date: 2018-05-16 17:15+1000\n"
+"PO-Revision-Date: 2018-05-16 17:15+1000\n"
+"Last-Translator: 123host <info@123host.com.au>\n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: speakout-email-petitions.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/addnew.php:28 includes/addnew.php:54
+#, fuzzy
+msgid "Edit Email Petition"
+msgstr "Изменить Email обращение"
+
+#: includes/addnew.php:32 includes/addnew.php:58 includes/addnew.php:77
+#, fuzzy
+msgid "Update Petition"
+msgstr "Обновление петиция"
+
+#: includes/addnew.php:40
+#, php-format
+msgid ""
+"Petition created. Use %1$s %2$s %3$s to display in a page or post. Use %1$s "
+"%4$s %3$s to display the signatures list or %1$s %5$s %3$s to show just the "
+"signature count."
+msgstr ""
+"Петиция создан. Используйте %1$s %2$s %3$s для отображения на странице или "
+"должности. Используйте %1$s %4$s %3$s для отображения списка подписей или "
+"%1$s %5$s %3$s  чтобы отобразить только количество подписи."
+
+#: includes/addnew.php:73
+#, fuzzy
+msgid "Edit New Email Petition"
+msgstr "Отредактируйте новый Email петицию"
+
+#: includes/addnew.php:78
+msgid "Petition "
+msgstr "Ходатайство "
+
+#: includes/addnew.php:85
+#, fuzzy
+msgid "Add New Email Petition"
+msgstr "Добавить новый Email петицию"
+
+#: includes/addnew.php:89
+#, fuzzy
+msgid "Create Petition"
+msgstr "Создание петицию"
+
+#: includes/addnew.php:91
+#, fuzzy
+msgid "Add me to your mailing list"
+msgstr "Добавить меня в свой список рассылки"
+
+#: includes/addnew.view.php:49
+#, fuzzy
+msgid "Error: Please correct the highlighted fields."
+msgstr "Ошибка: Исправьте выделенные поля."
+
+#: includes/addnew.view.php:64
+msgid "Enter title here"
+msgstr "Введите Заголовок здесь"
+
+#: includes/addnew.view.php:71 includes/emailpetition.php:306
+#: includes/help.php:33 includes/signatures.php:69 includes/signatures.php:107
+#: includes/signatures.view.php:46 includes/signatures.view.php:59
+#: includes/widget.php:91
+#, fuzzy
+msgid "Petition"
+msgstr "Ходатайство"
+
+#: includes/addnew.view.php:75 includes/help.php:7
+#, fuzzy
+msgid "Do not send email (only collect signatures)"
+msgstr "Не отправлять электронную почту (только сбор подписей)"
+
+#: includes/addnew.view.php:79 includes/help.php:8
+#, fuzzy
+msgid "Target Email"
+msgstr "Целевые Email"
+
+#: includes/addnew.view.php:79
+msgid "you may enter multiple addresses separated by commas"
+msgstr "Вы можете ввести несколько адресов, разделенных запятыми"
+
+#: includes/addnew.view.php:82 includes/help.php:9 includes/help.php:70
+#: includes/settings.view.php:216
+msgid "Email Subject"
+msgstr "Субъект E-mail"
+
+#: includes/addnew.view.php:85 includes/help.php:10
+msgid "Greeting"
+msgstr "Приветствие"
+
+#: includes/addnew.view.php:90 includes/help.php:11
+#, fuzzy
+msgid "Petition Message"
+msgstr "Сообщение петиции"
+
+#: includes/addnew.view.php:97 includes/help.php:14 includes/help.php:38
+#, fuzzy
+msgid "Twitter Message"
+msgstr "Щебетать сообщение"
+
+#: includes/addnew.view.php:112 includes/help.php:43
+#, fuzzy
+msgid "Petition Options"
+msgstr "Петицию опции"
+
+#: includes/addnew.view.php:121 includes/help.php:17
+#, fuzzy
+msgid "Confirm signatures"
+msgstr "Подтверждение подписи"
+
+#: includes/addnew.view.php:124
+msgid "Return URL"
+msgstr "URL возврата"
+
+#: includes/addnew.view.php:133
+#, fuzzy
+msgid "Allow message to be edited"
+msgstr "Разрешать сообщение для редактирования"
+
+#: includes/addnew.view.php:141 includes/help.php:19
+#, fuzzy
+msgid "Set signature goal"
+msgstr "Цель установить подпись"
+
+#: includes/addnew.view.php:144 includes/petitions.view.php:21
+#: includes/petitions.view.php:31
+msgid "Goal"
+msgstr "გოლი"
+
+#: includes/addnew.view.php:153 includes/help.php:20
+#, fuzzy
+msgid "Set expiration date"
+msgstr "Срок Действия"
+
+#: includes/addnew.view.php:157
+msgid "Jan"
+msgstr "Янв"
+
+#: includes/addnew.view.php:158
+msgid "Feb"
+msgstr "Фев"
+
+#: includes/addnew.view.php:159
+msgid "Mar"
+msgstr "Мартт"
+
+#: includes/addnew.view.php:160
+msgid "Apr"
+msgstr "Апр"
+
+#: includes/addnew.view.php:161
+msgid "May"
+msgstr "Май"
+
+#: includes/addnew.view.php:162
+msgid "Jun"
+msgstr "Июнь"
+
+#: includes/addnew.view.php:163
+msgid "Jul"
+msgstr "Июль"
+
+#: includes/addnew.view.php:164
+msgid "Aug"
+msgstr "Авг"
+
+#: includes/addnew.view.php:165
+msgid "Sep"
+msgstr "Сен"
+
+#: includes/addnew.view.php:166
+msgid "Oct"
+msgstr "Окт"
+
+#: includes/addnew.view.php:167
+msgid "Nov"
+msgstr "Нов"
+
+#: includes/addnew.view.php:168
+msgid "Dec"
+msgstr "Дек"
+
+#: includes/addnew.view.php:190 includes/help.php:48
+msgid "Display Options"
+msgstr "Показать варианты"
+
+#: includes/addnew.view.php:199 includes/help.php:23
+#, fuzzy
+msgid "Display address fields"
+msgstr "Отображение поля адреса"
+
+#: includes/addnew.view.php:203 includes/emailpetition.php:151
+#: includes/widget.php:249
+msgid "Street"
+msgstr "Улица"
+
+#: includes/addnew.view.php:206 includes/csv.php:48
+#: includes/emailpetition.php:159 includes/settings.view.php:176
+#: includes/widget.php:256
+msgid "City"
+msgstr "город"
+
+#: includes/addnew.view.php:209 includes/emailpetition.php:166
+#: includes/settings.view.php:179 includes/widget.php:263
+msgid "State / Province"
+msgstr "Штат / Провинция"
+
+#: includes/addnew.view.php:212 includes/csv.php:50
+#: includes/emailpetition.php:174 includes/settings.view.php:182
+#, fuzzy
+#| msgid "Post Code"
+msgid "Postal Code"
+msgstr "Почтовый индекс"
+
+#: includes/addnew.view.php:215 includes/csv.php:51
+#: includes/emailpetition.php:181 includes/settings.view.php:185
+#: includes/widget.php:280
+msgid "Country"
+msgstr "Страна"
+
+#: includes/addnew.view.php:223 includes/help.php:24
+msgid "Display custom field"
+msgstr "Отображать настраиваемое поле"
+
+#: includes/addnew.view.php:226 includes/addnew.view.php:250
+msgid "Label"
+msgstr "Этикетка"
+
+#: includes/addnew.view.php:235
+msgid "Display custom message"
+msgstr "Отображать собственное сообщение"
+
+#: includes/addnew.view.php:238
+msgid "Message"
+msgstr "Сообщение"
+
+#: includes/addnew.view.php:247 includes/help.php:25
+#, fuzzy
+msgid "Display opt-in checkbox"
+msgstr "Отображать флажок выбирать в"
+
+#. Plugin Name of the plugin/theme
+#: includes/admin.php:9
+#, fuzzy
+msgid "SpeakOut! Email Petitions"
+msgstr "SpeakOut! Электронной почте ходатайства"
+
+#: includes/admin.php:10
+#, fuzzy
+msgid "SpeakOut!"
+msgstr "Speakout!"
+
+#: includes/admin.php:23 includes/admin.php:24 includes/petitions.view.php:4
+msgid "Add New"
+msgstr "Добавить новое"
+
+#: includes/admin.php:34 includes/admin.php:35 includes/petitions.view.php:20
+#: includes/petitions.view.php:30 includes/signatures.view.php:4
+msgid "Signatures"
+msgstr "Подписи"
+
+#: includes/admin.php:39
+#, fuzzy
+#| msgid "signature"
+#| msgid_plural "signatures"
+msgid "signatures"
+msgstr "подпись"
+
+#: includes/admin.php:46 includes/settings.view.php:54
+#, fuzzy
+msgid "SpeakOut! Petitions Settings"
+msgstr "SpeakOut! Параметры петиции"
+
+#: includes/admin.php:47
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/admin.php:57 includes/admin.php:58
+#, fuzzy
+msgid "Import from SpeakUp"
+msgstr "Импорт из SpeakUp"
+
+#: includes/class.petition.php:188
+msgid "No Title"
+msgstr "Без заголовка"
+
+#: includes/class.speakout.php:117
+msgid "items"
+msgstr "предметы"
+
+#: includes/class.speakout.php:131 includes/class.speakout.php:134
+msgid "of"
+msgstr "из"
+
+#: includes/confirmations.php:52
+#, fuzzy
+msgid "Thank you. Your signature has been added to the petition."
+msgstr "Спасибо. Ваша подпись был добавлен к петиции."
+
+#: includes/confirmations.php:57
+#, fuzzy
+msgid "Your signature has already been confirmed."
+msgstr "Ваша подпись уже подтверждена."
+
+#: includes/confirmations.php:61
+#, fuzzy
+msgid "The confirmation code you provided is invalid."
+msgstr "Недопустимый код подтверждения, который вы указали."
+
+#: includes/confirmations.php:96
+msgid "Email Confirmation"
+msgstr "Подтверждение электронной почты"
+
+#: includes/confirmations.php:98
+#, fuzzy
+msgid "You will be redirected momentarily."
+msgstr "Вы будете перенаправлены однократно."
+
+#: includes/csv.php:10 includes/signatures.php:5
+#, fuzzy
+msgid "Insufficient privileges: You need to be an editor to do that."
+msgstr "Недостаточные привилегии: вам нужно быть редактор для этого."
+
+#: includes/csv.php:23 includes/signatures.view.php:68
+#, fuzzy
+msgid "No signatures found."
+msgstr "Подписи не найдено."
+
+#: includes/csv.php:44 includes/emailpetition.php:129 includes/widget.php:228
+msgid "First Name"
+msgstr "Имя"
+
+#: includes/csv.php:45 includes/emailpetition.php:134 includes/widget.php:232
+msgid "Last Name"
+msgstr "Фамилия"
+
+#: includes/csv.php:46
+msgid "Email Address"
+msgstr "Email"
+
+#: includes/csv.php:47
+msgid "Street Address"
+msgstr "Адрес"
+
+#: includes/csv.php:49
+msgid "State"
+msgstr "Страна"
+
+#: includes/csv.php:52
+msgid "Date Signed"
+msgstr "Дата подписания"
+
+#: includes/csv.php:53 includes/signatures.view.php:47
+#: includes/signatures.view.php:60
+msgid "Confirmed"
+msgstr "Подтвержденные"
+
+#: includes/csv.php:54
+#, fuzzy
+msgid "Petition Title"
+msgstr "Название петицию"
+
+#: includes/csv.php:55
+#, fuzzy
+msgid "Petition ID"
+msgstr "Петицию ID"
+
+#: includes/csv.php:56
+msgid "Email Opt-in"
+msgstr "Емейл подписка"
+
+#: includes/csv.php:57 includes/settings.view.php:191
+msgid "Custom Message"
+msgstr "Сообщение клиента"
+
+#: includes/csv.php:58
+msgid "Language"
+msgstr "Язык"
+
+#: includes/csv.php:59
+msgid "IP Address"
+msgstr "IP-адрес"
+
+#: includes/csv.php:69 includes/settings.view.php:188
+msgid "Custom Field"
+msgstr "Пользовательское поле"
+
+#: includes/csv.php:85 includes/signatures.view.php:78
+msgid "confirmed"
+msgstr "подтвержденный"
+
+#: includes/csv.php:88 includes/signatures.view.php:80
+msgid "unconfirmed"
+msgstr "не подтвержден"
+
+#: includes/csv.php:96 includes/signatures.view.php:86
+msgid "yes"
+msgstr "да"
+
+#: includes/csv.php:99 includes/signatures.view.php:88
+msgid "no"
+msgstr "нет"
+
+#: includes/emailpetition.php:87
+#, fuzzy
+msgid "Read or edit the petition"
+msgstr "Чтение или редактирование петицию"
+
+#: includes/emailpetition.php:87
+#, fuzzy
+msgid "Read the petition"
+msgstr "Прочитайте петицию"
+
+#: includes/emailpetition.php:114 includes/help.php:6 includes/help.php:75
+#: includes/settings.view.php:152 includes/widget.php:88
+msgid "Title"
+msgstr "Заглавие"
+
+#: includes/emailpetition.php:116
+msgid "Ms"
+msgstr "Мисс"
+
+#: includes/emailpetition.php:117
+msgid "Mr"
+msgstr "Г-н"
+
+#: includes/emailpetition.php:118
+msgid "Mrs"
+msgstr "Г-жа"
+
+#: includes/emailpetition.php:119
+msgid "Miss"
+msgstr "Миссис"
+
+#: includes/emailpetition.php:120
+msgid "Mx."
+msgstr "Mx"
+
+#: includes/emailpetition.php:121
+msgid "Dr."
+msgstr "компания Dr."
+
+#: includes/emailpetition.php:138 includes/signatures.view.php:45
+#: includes/signatures.view.php:58 includes/widget.php:236
+msgid "Email"
+msgstr "Email"
+
+#: includes/emailpetition.php:144 includes/widget.php:242
+msgid "Confirm Email"
+msgstr "Подтверждение email"
+
+#: includes/emailpetition.php:195 includes/emailpetition.php:202
+#: includes/widget.php:192 includes/widget.php:201
+msgid "your signature"
+msgstr "ВАША ПОДПИСЬ"
+
+#: includes/emailpetition.php:218 includes/widget.php:313
+#, fuzzy
+msgid "BCC yourself"
+msgstr "BCC себя"
+
+#: includes/emailpetition.php:225 includes/widget.php:320
+msgid "Yes, I accept your "
+msgstr "Да, я принимаю "
+
+#: includes/emailpetition.php:225 includes/widget.php:320
+msgid "privacy policy"
+msgstr "конфиденциальность"
+
+#: includes/emailpetition.php:247 includes/widget.php:164
+msgid "of goal"
+msgstr "цели"
+
+#: includes/emailpetition.php:252 includes/emailpetition.php:288
+#: includes/widget.php:169
+msgid "signature"
+msgid_plural "signatures"
+msgstr[0] "подпись"
+msgstr[1] "подпись"
+msgstr[2] "подпись"
+
+#: includes/emailpetition.php:278 includes/widget.php:221
+#, fuzzy
+msgid "Signature goal"
+msgstr "Цель подписи"
+
+#: includes/emailpetition.php:283 includes/widget.php:217
+msgid "End date"
+msgstr "Конечная дата"
+
+#: includes/emailpetition.php:284 includes/widget.php:218
+#, fuzzy
+msgid "Signatures collected"
+msgstr "Собранных подписей"
+
+#: includes/emailpetition.php:308
+#, fuzzy
+msgid "Error: You must include a valid id."
+msgstr "Ошибка: Необходимо указать действительный идентификатор."
+
+#: includes/help.php:6
+#, fuzzy
+msgid ""
+"Enter the title of your petition, which will appear at the top of the "
+"petition form."
+msgstr ""
+"Введите название вашего ходатайства, которое будет отображаться в верхней "
+"части формы петицию."
+
+#: includes/help.php:7
+#, fuzzy
+msgid ""
+"Use this option if do not wish to send petition emails to a target address."
+msgstr ""
+"Используйте эту опцию, если не хотите отправить петицию письма на адрес "
+"целевого объекта."
+
+#: includes/help.php:8
+#, fuzzy
+msgid ""
+"Enter the email address to which the petition will be sent. You may enter "
+"multiple email addresses, separated by commas."
+msgstr ""
+"Введите адрес электронной почты, к которому будут направляться петиции. Вы "
+"можете ввести несколько адресов электронной почты, разделенных запятыми."
+
+#: includes/help.php:9
+#, fuzzy
+msgid "Enter the subject of your petition email."
+msgstr "Введите тему электронной петиции."
+
+#: includes/help.php:10
+#, fuzzy
+msgid ""
+"Include a greeting to the recipient of your petition, such as \"Dear Sir,\" "
+"which will appear as the first line of the email."
+msgstr ""
+"Включить приветствие получателю вашей петиции, например «Милостивый "
+"государь,» который будет отображаться как в первой строке электронной почты."
+
+#: includes/help.php:11
+#, fuzzy
+msgid "Enter the content of your petition email."
+msgstr "Введите содержимое электронной петиции."
+
+#: includes/help.php:14
+#, fuzzy
+msgid ""
+"Enter a prepared tweet that will be presented to users when the Twitter "
+"button is clicked."
+msgstr ""
+"Введите подготовленный чирикать, которое будет представлено пользователям "
+"при нажатии кнопки Twitter."
+
+#: includes/help.php:17
+#, fuzzy
+msgid ""
+"Use this option to cause an email to be sent to the signers of your "
+"petition. This email contains a special link must be clicked to confirm the "
+"signer's email address. Petition emails will not be sent until the signature "
+"is confirmed."
+msgstr ""
+"Используйте этот параметр, чтобы привести к электронной почте, чтобы быть "
+"отправлены к signers вашего ходатайства. Это письмо содержит специальную "
+"связь должна быть нажата, чтобы подтвердить адрес электронной почты "
+"подписывающего. Петицию письма не будут направляться до подтверждения "
+"подписи."
+
+#: includes/help.php:18
+#, fuzzy
+msgid "Allow messages to be edited"
+msgstr "Разрешить получение сообщений для редактирования"
+
+#: includes/help.php:18
+#, fuzzy
+msgid ""
+"Check this option to allow signatories to customize the text of their "
+"petition email."
+msgstr ""
+"Установите этот флажок, чтобы разрешить подписавших настраивать текст письма "
+"их петиции."
+
+#: includes/help.php:19
+#, fuzzy
+msgid ""
+"Enter the number of signatures you hope to collect. This number is used to "
+"calculate the progress bar display."
+msgstr ""
+"Введите количество подписей, вы надеетесь собрать. Это число используется "
+"для вычисления дисплей прогресс бар."
+
+#: includes/help.php:20
+#, fuzzy
+msgid "Use this option to stop collecting signatures on a specific date."
+msgstr ""
+"Используйте этот параметр, чтобы остановить сбор подписей на определенную "
+"дату."
+
+#: includes/help.php:23
+#, fuzzy
+msgid "Select the address fields to display in the petition form."
+msgstr "Выберите поля адреса для отображения в форме петиции."
+
+#: includes/help.php:24
+msgid "Add a custom field to the petition form for collecting additional data."
+msgstr ""
+"Добавьте настраиваемое поле в форму петицию для сбора дополнительных данных."
+
+#: includes/help.php:25
+#, fuzzy
+msgid ""
+"Include a checkbox that allows users to consent to receiving further email."
+msgstr ""
+"Включить флажок, который позволяет пользователям давать согласие на "
+"дальнейшее получение электронной почты."
+
+#: includes/help.php:56
+#, fuzzy
+msgid ""
+"These settings control the display of the [emailpetition] shortcode and "
+"sidebar widget."
+msgstr ""
+"Эти параметры управляют отображением [emailpetition] shortcode и боковой "
+"панели виджетов."
+
+#: includes/help.php:57 includes/settings.view.php:73
+#, fuzzy
+msgid "Petition Theme"
+msgstr "Петицию тема"
+
+#: includes/help.php:57
+#, fuzzy
+msgid "Select a CSS theme that will control the appearance of petition forms."
+msgstr ""
+"Выберите тему CSS, которая будет контролировать внешний вид форм петицию."
+
+#: includes/help.php:58 includes/settings.view.php:80
+#, fuzzy
+msgid "Widget Theme"
+msgstr "Тема виджет"
+
+#: includes/help.php:58
+#, fuzzy
+msgid ""
+"Select a CSS theme that will control the appearance of petition widgets."
+msgstr ""
+"Выберите тему CSS, которая будет контролировать внешний вид виджетов петицию."
+
+#: includes/help.php:59 includes/settings.view.php:87
+msgid "Submit Button Text"
+msgstr "Кнопка отправки Текст"
+
+#: includes/help.php:59
+#, fuzzy
+msgid ""
+"Enter the text that displays in the orange submit button on petition forms."
+msgstr ""
+"Введите текст, отображаемый на кнопке Отправить оранжевый на Петиция формы."
+
+#: includes/help.php:60 includes/settings.view.php:91
+msgid "Success Message"
+msgstr "Сообщение об успешном завершении"
+
+#: includes/help.php:60
+#, fuzzy
+msgid ""
+"Enter the text that appears when a user successfully signs your petition "
+"with a unique email address."
+msgstr ""
+"Введите текст, который появляется, когда пользователь успешно выполняет свою "
+"петицию с уникальный адрес электронной почты."
+
+#: includes/help.php:61 includes/settings.view.php:99
+#, fuzzy
+msgid "Share Message"
+msgstr "Доля сообщение"
+
+#: includes/help.php:61
+#, fuzzy
+msgid ""
+"Enter the text that appears above the Twitter and Facebook buttons after the "
+"petition form has been submitted."
+msgstr ""
+"Введите текст, который появляется над кнопки Twitter и Facebook после того, "
+"как был представлен Петиция формы."
+
+#: includes/help.php:62 includes/settings.view.php:103
+#, fuzzy
+msgid "Expiration Message"
+msgstr "Срок действия сообщения"
+
+#: includes/help.php:62
+#, fuzzy
+msgid ""
+"Enter the text to display in place of the petition form when a petition is "
+"past its expiration date."
+msgstr ""
+"Введите текст для отображения вместо Петиция формы, когда петицию за его "
+"истечения срока."
+
+#: includes/help.php:63 includes/settings.view.php:107
+#, fuzzy
+msgid "Already Signed Message"
+msgstr "Уже подписано сообщение"
+
+#: includes/help.php:63
+#, fuzzy
+msgid ""
+"Enter the text to display when a petition is signed using an email address "
+"that has already been submitted."
+msgstr ""
+"Введите текст для отображения при петицию подписали, используя адрес "
+"электронной почты, который уже был представлен."
+
+#: includes/help.php:64 includes/settings.view.php:111
+#, fuzzy
+msgid "Opt-in Default"
+msgstr "Выбирать по умолчанию"
+
+#: includes/help.php:64
+#, fuzzy
+msgid "Choose whether the opt-in checkbox is checked or unchecked by default."
+msgstr "Выберите ли флажок Отказ в установке и снятии флажка по умолчанию."
+
+#: includes/help.php:65 includes/settings.view.php:118
+#, fuzzy
+msgid "Display signature count"
+msgstr "Показать подпись фото"
+
+#: includes/help.php:65
+#, fuzzy
+msgid ""
+"Choose whether you wish to display the number of signatures that have been "
+"collected."
+msgstr ""
+"Выберите, хотите ли вы отображать количество подписей, которые были собраны."
+
+#: includes/help.php:68
+#, fuzzy
+msgid "These settings control the content of the confirmation emails."
+msgstr "Эти параметры управляют содержание письма подтверждения."
+
+#: includes/help.php:69 includes/settings.view.php:212
+msgid "Email From"
+msgstr "Email ОТ"
+
+#: includes/help.php:69
+#, fuzzy
+msgid ""
+"Enter the email address associated with your website. Confirmation emails "
+"will be sent from this address."
+msgstr ""
+"Введите адрес электронной почты, связанный с вашего веб-сайта. Подтверждение "
+"электронной почты будет отправлен с этого адреса."
+
+#: includes/help.php:70
+#, fuzzy
+msgid "Enter the subject of the confirmation email."
+msgstr "Введите тему сообщения электронной почты."
+
+#: includes/help.php:71 includes/settings.view.php:220
+msgid "Email Message"
+msgstr "Сообщение электронной почты"
+
+#: includes/help.php:71
+#, fuzzy
+msgid "Enter the content of the confirmation email."
+msgstr "Введите содержимое подтверждение по электронной почте."
+
+#: includes/help.php:74
+#, fuzzy
+msgid "These settings control the display of the [signaturelist] shortcode."
+msgstr "Эти параметры управляют отображением короткий номер [signaturelist]."
+
+#: includes/help.php:75
+#, fuzzy
+msgid "Enter the text that appears above the signature list."
+msgstr "Введите текст, который появляется над списком подпись."
+
+#: includes/help.php:76 includes/settings.view.php:155
+msgid "Theme"
+msgstr "Тема"
+
+#: includes/help.php:76
+#, fuzzy
+msgid "Select a CSS theme that will control the appearance of signature lists."
+msgstr ""
+"Выберите тему CSS, которая будет контролировать внешний вид подписи списков."
+
+#: includes/help.php:77 includes/settings.view.php:162
+msgid "Rows"
+msgstr "Вертикально"
+
+#: includes/help.php:77
+#, fuzzy
+msgid ""
+"Enter the number of signatures that will be displayed in the signature list."
+msgstr ""
+"Введите количество подписей, которые будут отображаться в списке подпись."
+
+#: includes/help.php:78 includes/settings.view.php:173
+msgid "Columns"
+msgstr "Колонки"
+
+#: includes/help.php:78
+#, fuzzy
+msgid "Select the columns that will appear in the signature list."
+msgstr "Выберите столбцы, которые будут отображаться в списке подпись."
+
+#: includes/help.php:81
+#, fuzzy
+msgid ""
+"These settings control the look of the plugin's options pages within the "
+"WordPress administrator."
+msgstr ""
+"Эти параметры определяют внешний вид страниц параметры плагина в WordPress "
+"администратора."
+
+#: includes/help.php:82 includes/settings.view.php:234
+#, fuzzy
+msgid "Petitions table shows"
+msgstr "Петиций таблице показано"
+
+#: includes/help.php:82
+#, fuzzy
+msgid ""
+"Enter the number of rows to display in the \"Email Petitions\" table "
+"(default=20)"
+msgstr ""
+"Введите количество строк для отображения в таблице прошения о «электронной "
+"почты»"
+
+#: includes/help.php:83 includes/settings.view.php:238
+#, fuzzy
+msgid "Signatures table shows"
+msgstr "Подписи таблице показано"
+
+#: includes/help.php:83
+#, fuzzy
+msgid ""
+"Enter the number of rows to display in the \"Signatures\" table (default=50)"
+msgstr "Введите количество строк для отображения в таблице «Подписи»"
+
+#: includes/help.php:84 includes/settings.view.php:243
+#, fuzzy
+msgid "CSV file includes"
+msgstr "CSV-файл включает в себя"
+
+#: includes/help.php:84
+#, fuzzy
+msgid ""
+"Select the subset of signatures that will be included in CSV file downloads"
+msgstr ""
+"Выберите подмножество подписей, которые будут включены в CSV файл загрузки"
+
+#: includes/help.php:92 includes/settings.view.php:63
+#: includes/settings.view.php:70
+#, fuzzy
+msgid "Petition Form"
+msgstr "Петиция формы"
+
+#: includes/help.php:97 includes/settings.view.php:64
+#: includes/settings.view.php:149
+#, fuzzy
+msgid "Signature List"
+msgstr "Список подписей"
+
+#: includes/help.php:102 includes/settings.view.php:65
+#: includes/settings.view.php:209
+msgid "Confirmation Emails"
+msgstr "Сколько нужно Писем Подтверждения для нескольких подписок"
+
+#: includes/help.php:107 includes/settings.view.php:66
+#: includes/settings.view.php:231
+#, fuzzy
+msgid "Admin Display"
+msgstr "Отображение admin"
+
+#: includes/import.view.php:62
+#, fuzzy
+msgid "Import petitions from SpeakUp to SpeakOut!"
+msgstr "Импорт петиции от SpeakUp SpeakOut!"
+
+#: includes/install.php:67
+#, fuzzy
+msgid "Sign Now"
+msgstr "Подпишите теперь"
+
+#: includes/install.php:68
+#, fuzzy
+msgid "This petition is now closed."
+msgstr "Эта петиция теперь закрыт."
+
+#: includes/install.php:69
+msgid "Thank you"
+msgstr "Спасибо Вам"
+
+#: includes/install.php:69
+#, fuzzy
+msgid "Your signature has been added."
+msgstr "Была добавлена подпись."
+
+#: includes/install.php:70
+#, fuzzy
+msgid "This petition has already been signed using your email address."
+msgstr "Эта петиция уже подписан с помощью адреса электронной почты."
+
+#: includes/install.php:71
+msgid "Share this with your friends:"
+msgstr "Расскажите об этом друзьям:"
+
+#: includes/install.php:72 includes/install.php:194
+msgid "Please confirm your email address"
+msgstr "Пожалуйста подтвердите ваш адрес электронной почты"
+
+#: includes/install.php:73 includes/install.php:197
+msgid "Hello"
+msgstr "Здравствуйте"
+
+#: includes/install.php:73
+#, fuzzy
+msgid "Thank you for signing our petition %petition_title% "
+msgstr "Благодарим вас за подписание нашу петицию"
+
+#: includes/install.php:73 includes/install.php:197
+msgid ""
+"Please confirm your email address by clicking or copying and pasting the "
+"link below:"
+msgstr ""
+"Пожалуйста, подтвердите свой адрес электронной почты, нажав или скопировав и "
+"вставив ссылку ниже:"
+
+#: includes/install.php:78 includes/install.php:203
+#, fuzzy
+msgid "Latest Signatures"
+msgstr "Последние подписи"
+
+#: includes/install.php:197
+#, fuzzy
+msgid "Thank you for signing our petition"
+msgstr "Благодарим вас за подписание нашу петицию"
+
+#: includes/petitions.php:44 includes/petitions.php:55
+#, fuzzy
+msgid "Email Petitions"
+msgstr "Электронной почте ходатайства"
+
+#: includes/petitions.php:46
+#, fuzzy
+msgid "Petition deleted."
+msgstr "Петиция удалены."
+
+#: includes/petitions.view.php:9
+#, fuzzy
+msgid "All Petitions"
+msgstr "Все ходатайства"
+
+#: includes/petitions.view.php:17 includes/petitions.view.php:27
+msgid "ID"
+msgstr "ID"
+
+#: includes/petitions.view.php:18 includes/petitions.view.php:28
+#, fuzzy
+msgid "Petition name"
+msgstr "Имя петицию"
+
+#: includes/petitions.view.php:19 includes/petitions.view.php:29
+msgid "Shortcodes"
+msgstr "Шорткоды"
+
+#: includes/petitions.view.php:36
+#, fuzzy
+msgid "No petitions found."
+msgstr "Петиций не найдено."
+
+#: includes/petitions.view.php:49
+msgid "Edit"
+msgstr "Редактировать"
+
+#: includes/petitions.view.php:50 includes/signatures.view.php:101
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/petitions.view.php:60
+msgid "View Signatures"
+msgstr "Просмотр подписей"
+
+#: includes/petitions.view.php:70
+#, fuzzy
+msgid ""
+"Delete this petition permanently? All of the petition's signatures will be "
+"deleted as well."
+msgstr ""
+"Окончательно удалить эту петицию? Все петиция подписи будут также удалены."
+
+#: includes/settings.php:31
+msgid "Settings updated."
+msgstr "Настройки обновлены."
+
+#: includes/settings.view.php:75 includes/settings.view.php:82
+#: includes/settings.view.php:157
+msgid "Default"
+msgstr ""
+"По умолчанию\n"
+"Предложить исправление"
+
+#: includes/settings.view.php:76
+msgid "Basic"
+msgstr "главный"
+
+#: includes/settings.view.php:77 includes/settings.view.php:83
+#: includes/settings.view.php:158
+msgid "None"
+msgstr "Ничего"
+
+#: includes/settings.view.php:77 includes/settings.view.php:83
+#: includes/settings.view.php:158
+msgid "use"
+msgstr "использовать"
+
+#: includes/settings.view.php:94 includes/settings.view.php:223
+msgid "Accepted variables:"
+msgstr "Принятых переменных:"
+
+#: includes/settings.view.php:95 includes/settings.view.php:224
+msgid "Accepted tags:"
+msgstr "Принятые теги:"
+
+#: includes/settings.view.php:113
+msgid "Checked"
+msgstr "Проверено"
+
+#: includes/settings.view.php:114
+msgid "Unchecked"
+msgstr "Непроверено"
+
+#: includes/settings.view.php:120 includes/settings.view.php:127
+#: includes/settings.view.php:134 includes/settings.view.php:141
+msgid "Yes"
+msgstr "Да"
+
+#: includes/settings.view.php:121 includes/settings.view.php:128
+#: includes/settings.view.php:135
+msgid "No"
+msgstr "Нет"
+
+#: includes/settings.view.php:125
+msgid "Display honorific field"
+msgstr "Почетный поле"
+
+#: includes/settings.view.php:132
+msgid "Display BCC field"
+msgstr "Поле «СК»"
+
+#: includes/settings.view.php:139
+#, fuzzy
+#| msgid "Display BCC field"
+msgid "Display T&C accept?"
+msgstr "Поле «СК»"
+
+#: includes/settings.view.php:141
+msgid "GDPR"
+msgstr "GDPR"
+
+#: includes/settings.view.php:163
+#, fuzzy
+msgid "leave blank to display all"
+msgstr "Оставьте пустым для отображения всех"
+
+#: includes/settings.view.php:166
+msgid "Display"
+msgstr "Дисплей"
+
+#: includes/settings.view.php:168
+#, fuzzy
+#| msgid "disabled"
+msgid "table"
+msgstr "отключен"
+
+#: includes/settings.view.php:169
+msgid "long list (comma separated)"
+msgstr "длинный список (через запятую)"
+
+#: includes/settings.view.php:194 includes/signatures.view.php:49
+#: includes/signatures.view.php:62
+msgid "Date"
+msgstr "Дата"
+
+#: includes/settings.view.php:198
+msgid "Privacy"
+msgstr "Конфиденциальность"
+
+#: includes/settings.view.php:200
+#, fuzzy
+msgid "enabled - only show first letter of surname"
+msgstr "включен - показывать только первая буква фамилии"
+
+#: includes/settings.view.php:201
+msgid "disabled"
+msgstr "отключен"
+
+#: includes/settings.view.php:235
+msgid "rows - default = 20"
+msgstr "По умолчанию: 20 капель / мл."
+
+#: includes/settings.view.php:239
+msgid "rows - default = 50"
+msgstr ""
+"По умолчанию\n"
+"Предложить исправление"
+
+#: includes/settings.view.php:245
+#, fuzzy
+msgid "All signatures"
+msgstr "Все подписи"
+
+#: includes/settings.view.php:246
+#, fuzzy
+msgid "Only opt-in signatures"
+msgstr "Только ОПТ в подписи"
+
+#: includes/settings.view.php:247
+#, fuzzy
+msgid "Only double opt-in signatures"
+msgstr "Только двойной отказ в подписи"
+
+#: includes/settings.view.php:247
+#, fuzzy
+msgid "opt-in + confirmed"
+msgstr "opt в + подтвержденных"
+
+#: includes/settings.view.php:253
+msgid "Save Changes"
+msgstr "Сохранить Изменения"
+
+#: includes/signatures.php:48 includes/signatures.php:120
+#, fuzzy
+msgid "All Signatures"
+msgstr "Все подписи"
+
+#: includes/signatures.php:52
+#, fuzzy
+msgid "Signature deleted."
+msgstr "Подпись удалена."
+
+#: includes/signatures.php:110
+msgid "Confirmation emails sent."
+msgstr "Сколько нужно Писем Подтверждения для нескольких подписок."
+
+#: includes/signatures.view.php:16
+#, fuzzy
+msgid "Select petition"
+msgstr "Выберите петицию"
+
+#: includes/signatures.view.php:26
+msgid "Download as CSV"
+msgstr "Скачать как .csv"
+
+#: includes/signatures.view.php:27
+#, fuzzy
+msgid "Re-send confirmations"
+msgstr "Повторной отправки подтверждений"
+
+#: includes/signatures.view.php:28
+#, fuzzy
+msgid ""
+"Are you sure you want to do this? A separate confirmation email will be sent "
+"for each unconfirmed signature."
+msgstr ""
+"Вы уверены, что вы хотите это сделать? Отдельный подтверждение по "
+"электронной почте будет отправлено для каждой подписи, неподтвержденные."
+
+#: includes/signatures.view.php:44 includes/signatures.view.php:57
+msgid "Name"
+msgstr "Название"
+
+#: includes/signatures.view.php:48 includes/signatures.view.php:61
+msgid "Opt-in"
+msgstr "Форма"
+
+#: includes/signatures.view.php:50 includes/signatures.view.php:63
+msgid "IP"
+msgstr "IP"
+
+#: includes/widget.php:15
+#, fuzzy
+msgid "Display a petition form."
+msgstr "Отображение формы петицию."
+
+#: includes/widget.php:77
+#, fuzzy
+msgid "Sign the Petition"
+msgstr "Подписать петицию"
+
+#: includes/widget.php:89
+#, fuzzy
+msgid "Sharing URL"
+msgstr "Совместное использование URL-адреса"
+
+#: includes/widget.php:90
+msgid "Call to Action"
+msgstr "Вызов действия"
+
+#: includes/widget.php:273
+#, fuzzy
+#| msgid "Post Code"
+msgid "Post Code"
+msgstr "Почтовый индекс"
+
+#: includes/widget.php:306
+msgid "Display honorific"
+msgstr "Почетный дисплея"
+
+#: speakout-email-petitions.php:63
+msgid "Support"
+msgstr "Поддержка"
+
+#: speakout-email-petitions.php:64
+msgid "Donate"
+msgstr "Пожертвовать"
+
+#. Plugin URI of the plugin/theme
+#, fuzzy
+msgid "https://speakout.123host.net.au/"
+msgstr "http://speakout.123host.com.au/"
+
+#. Description of the plugin/theme
+#, fuzzy
+msgid ""
+"Create custom email petition forms and include them on your site via "
+"shortcode or widget. Signatures are saved in the database and can be "
+"exported to CSV."
+msgstr ""
+"Создание пользовательских письмо Петиция формы и включить их на ваш сайт "
+"через короткий или виджет. Подписи сохраняются в базе данных и могут быть "
+"экспортированы в CSV."
+
+#. Author of the plugin/theme
+#, fuzzy
+msgid "Steve D forked from speakup"
+msgstr "Steve D раздвоенной от SpeakUp!"
+
+#. Author URI of the plugin/theme
+#, fuzzy
+msgid "https://123host.com.au"
+msgstr "http://speakout.123host.com.au"
+
+#~ msgid "rows"
+#~ msgstr "ряды"
