@@ -17,6 +17,7 @@ web/app/uploads/*
 !web/app/plugins/speakup-email-petitions
 !web/app/plugins/speakout
 !web/app/plugins/revslider
+!web/app/plugins/google-picasa-albums-viewer
 
 config/secrets.yml
 *.sql

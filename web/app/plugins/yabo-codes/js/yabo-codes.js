@@ -54,7 +54,7 @@ $(document).ready(function() {
 		txt=txt.replace("19:00 - 19:05","19:00");
 		txt=txt.replace("18:45 - 18:50","18:45");
 		txt=txt.replace("19:15 - 19:20","19:15");
-		txt=txt.replace("14:00 - 14:05","14:00");
+		txt=txt.replace("14:15 - 14:20","14:15");
 		
 		//console.log("my text="+txt);
 		$(this).html(txt);
