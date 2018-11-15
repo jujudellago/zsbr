@@ -1,4 +1,4 @@
-set :stage, :production
+set :stage, :swisscenter
 
 # Simple Role Syntax
 # ==================
@@ -8,17 +8,23 @@ set :stage, :production
 
 # Extended Server Syntax
 # ======================
-server 'flum.ftp.sharedbox.com', user: 'flum_zsyabo', roles: %w{web app db}
-
-set :tmp_dir, "/home/clients/15e0b62c05a08de02c6eae48e0705717/tmp"
+server "94.103.96.180", user: 'terolabs', roles: %w{web app db}
 
 
-set :deploy_to, -> { "/home/clients/15e0b62c05a08de02c6eae48e0705717/production" }
 
 
-SSHKit.config.command_map[:composer] = "php-5.6 /home/clients/15e0b62c05a08de02c6eae48e0705717/bin/composer/composer.phar"
+
+
+SSHKit.config.command_map[:composer] = "php56 /home/terolabs/utils/php/composer/composer.phar"
 
 SSHKit.config.command_map[:wp] ="~/bin/wp.sh"
+
+
+set :tmp_dir, "/home/terolabs/tmp"
+
+
+set :deploy_to, -> { "/home/terolabs/zermattsummit.org/zermattsummit" }
+
 
 # you can set custom ssh options
 # it's possible to pass any option but you need to keep in mind that net/ssh understand limited list of options
@@ -32,10 +38,14 @@ SSHKit.config.command_map[:wp] ="~/bin/wp.sh"
 
 fetch(:default_env).merge!(wp_env: :production)
 
-set :wpcli_remote_url, @secrets_yml['production_url']
+#set :wpcli_rsync_options, '-avz -e "ssh -p 2222"' 
+
+
+
+set :wpcli_remote_url, @secrets_yml['secure_url']
 set :wpcli_local_url, @secrets_yml['dev_url']
 
-set :local_tmp_dir, '/Users/juju/tmp'
+set :local_tmp_dir, '/tmp'
 set :wpcli_backup_db, true
 set :wpcli_local_db_backup_dir, 'config/backups'
 set :wpcli_local_uploads_dir, 'web/app/uploads/'
