@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '-1' );
+}
+
 /**
  * @var $tag - shortcode tag;
  */
@@ -14,6 +18,12 @@ return array(
 	'is_container' => true,
 	'description' => __( 'Place content elements inside the inner column', 'js_composer' ),
 	'params' => array(
+		array(
+			'type' => 'el_id',
+			'heading' => __( 'Element ID', 'js_composer' ),
+			'param_name' => 'el_id',
+			'description' => sprintf( __( 'Enter element ID (Note: make sure it is unique and valid according to <a href="%s" target="_blank">w3c specification</a>).', 'js_composer' ), 'http://www.w3schools.com/tags/att_global_id.asp' ),
+		),
 		array(
 			'type' => 'textfield',
 			'heading' => __( 'Extra class name', 'js_composer' ),
@@ -44,6 +54,10 @@ return array(
 				__( '10 columns - 5/6', 'js_composer' ) => '5/6',
 				__( '11 columns - 11/12', 'js_composer' ) => '11/12',
 				__( '12 columns - 1/1', 'js_composer' ) => '1/1',
+				__( '20% - 1/5', 'js_composer' ) => '1/5',
+				__( '40% - 2/5', 'js_composer' ) => '2/5',
+				__( '60% - 3/5', 'js_composer' ) => '3/5',
+				__( '80% - 4/5', 'js_composer' ) => '4/5',
 			),
 			'group' => __( 'Responsive Options', 'js_composer' ),
 			'description' => __( 'Select column width.', 'js_composer' ),

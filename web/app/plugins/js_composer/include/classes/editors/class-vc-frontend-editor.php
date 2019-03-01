@@ -4,9 +4,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * WPBakery Visual Composer front end editor
+ * WPBakery WPBakery Page Builder front end editor
  *
- * @package WPBakeryVisualComposer
+ * @package WPBakeryPageBuilder
  *
  */
 
@@ -88,7 +88,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	/**
 	 * @var string
 	 */
-	protected static $brand_url = 'http://vc.wpbakery.com/?utm_campaign=VCplugin&utm_source=vc_user&utm_medium=frontend_editor';
+	protected static $brand_url = 'http://wpbakery.com/?utm_campaign=VCplugin&utm_source=vc_user&utm_medium=frontend_editor';
 
 	/**
 	 *
@@ -118,15 +118,15 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 */
 	public function addHooks() {
 		add_action( 'template_redirect', array(
-			&$this,
+			$this,
 			'loadShortcodes',
 		) );
 		add_filter( 'page_row_actions', array(
-			&$this,
+			$this,
 			'renderRowAction',
 		) );
 		add_filter( 'post_row_actions', array(
-			&$this,
+			$this,
 			'renderRowAction',
 		) );
 		add_shortcode( 'vc_container_anchor', 'vc_container_anchor' );
@@ -138,7 +138,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 */
 	public function hookLoadEdit() {
 		add_action( 'current_screen', array(
-			&$this,
+			$this,
 			'adminInit',
 		) );
 		do_action( 'vc_frontend_editor_hook_load_edit' );
@@ -156,25 +156,29 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 *
 	 */
 	public function buildEditablePage() {
+		if ( isset( $_REQUEST['action'] ) && 'vc_load_shortcode' === $_REQUEST['action'] ) {
+			return;
+		}
 		! defined( 'CONCATENATE_SCRIPTS' ) && define( 'CONCATENATE_SCRIPTS', false );
+		visual_composer()->shared_templates->init();
 		add_filter( 'the_title', array(
-			&$this,
+			$this,
 			'setEmptyTitlePlaceholder',
 		) );
 
 		add_action( 'the_post', array(
-			&$this,
+			$this,
 			'parseEditableContent',
 		), 9999 ); // after all the_post actions ended
 
 		do_action( 'vc_inline_editor_page_view' );
 		add_filter( 'wp_enqueue_scripts', array(
-			&$this,
+			$this,
 			'loadIFrameJsCss',
 		) );
 
 		add_action( 'wp_footer', array(
-			&$this,
+			$this,
 			'printPostShortcodes',
 		) );
 	}
@@ -184,11 +188,11 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 */
 	public function buildPage() {
 		add_action( 'admin_bar_menu', array(
-			&$this,
+			$this,
 			'adminBarEditLink',
 		), 1000 );
 		add_filter( 'edit_post_link', array(
-			&$this,
+			$this,
 			'renderEditButton',
 		) );
 	}
@@ -201,10 +205,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	}
 
 	public static function frontendEditorEnabled() {
-		return self::inlineEnabled() && vc_user_access()
-			->part( 'frontend_editor' )
-			->can()
-			->get();
+		return self::inlineEnabled() && vc_user_access()->part( 'frontend_editor' )->can()->get();
 	}
 
 	/**
@@ -245,7 +246,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 			remove_all_filters( 'the_content' );
 			// Used for just returning $post->post_content
 			add_filter( 'the_content', array(
-				&$this,
+				$this,
 				'editableContent',
 			) );
 		}
@@ -323,22 +324,22 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		// WARNING from shortcodes.php! Do not change this regex without changing do_shortcode_tag() and strip_shortcode_tag()
 		// Also, see shortcode_unautop() and shortcode.js.
 		return '\\[' // Opening bracket
-		. '(\\[?)' // 1: Optional second opening bracket for escaping shortcodes: [[tag]]
-		. "($tagregexp)" // 2: Shortcode name
-		. '(?![\\w-])' // Not followed by word character or hyphen
-		. '(' // 3: Unroll the loop: Inside the opening shortcode tag
-		. '[^\\]\\/]*' // Not a closing bracket or forward slash
-		. '(?:' . '\\/(?!\\])' // A forward slash not followed by a closing bracket
-		. '[^\\]\\/]*' // Not a closing bracket or forward slash
-		. ')*?' . ')' . '(?:' . '(\\/)' // 4: Self closing tag ...
-		. '\\]' // ... and closing bracket
-		. '|' . '\\]' // Closing bracket
-		. '(?:' . '(' // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags
-		. '[^\\[]*+' // Not an opening bracket
-		. '(?:' . '\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag
-		. '[^\\[]*+' // Not an opening bracket
-		. ')*+' . ')' . '\\[\\/\\2\\]' // Closing shortcode tag
-		. ')?' . ')' . '(\\]?)'; // 6: Optional second closing brocket for escaping shortcodes: [[tag]]
+			. '(\\[?)' // 1: Optional second opening bracket for escaping shortcodes: [[tag]]
+			. "($tagregexp)" // 2: Shortcode name
+			. '(?![\\w-])' // Not followed by word character or hyphen
+			. '(' // 3: Unroll the loop: Inside the opening shortcode tag
+			. '[^\\]\\/]*' // Not a closing bracket or forward slash
+			. '(?:' . '\\/(?!\\])' // A forward slash not followed by a closing bracket
+			. '[^\\]\\/]*' // Not a closing bracket or forward slash
+			. ')*?' . ')' . '(?:' . '(\\/)' // 4: Self closing tag ...
+			. '\\]' // ... and closing bracket
+			. '|' . '\\]' // Closing bracket
+			. '(?:' . '(' // 5: Unroll the loop: Optionally, anything between the opening and closing shortcode tags
+			. '[^\\[]*+' // Not an opening bracket
+			. '(?:' . '\\[(?!\\/\\2\\])' // An opening bracket not followed by the closing shortcode tag
+			. '[^\\[]*+' // Not an opening bracket
+			. ')*+' . ')' . '\\[\\/\\2\\]' // Closing shortcode tag
+			. ')?' . ')' . '(\\]?)'; // 6: Optional second closing brocket for escaping shortcodes: [[tag]]
 
 	}
 
@@ -346,7 +347,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 *
 	 */
 	function setPost() {
-        global $post;
+		global $post;
 		$this->post = get_post(); // fixes #1342 if no get/post params set
 		$this->post_id = vc_get_param( 'post_id' );
 		if ( vc_post_param( 'post_id' ) ) {
@@ -355,7 +356,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		if ( $this->post_id ) {
 			$this->post = get_post( $this->post_id );
 		}
-		do_action_ref_array( 'the_post', array( &$this->post ) );
+		do_action_ref_array( 'the_post', array( $this->post ) );
 		$post = $this->post;
 		$this->post_id = $this->post->ID;
 	}
@@ -387,13 +388,12 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		global $current_user;
 		wp_get_current_user();
 		$this->current_user = $current_user;
-		$this->post_url = vc_str_remove_protocol( get_permalink( $this->post_id ) );
+		$this->post_url = set_url_scheme( get_permalink( $this->post_id ) );
 
 		if ( ! self::inlineEnabled() || ! vc_user_access()->wpAny( array(
 				'edit_post',
 				$this->post_id,
-			) )->get()
-		) {
+			) )->get() ) {
 			header( 'Location: ' . $this->post_url );
 		}
 		$this->registerJs();
@@ -445,7 +445,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		do_action( 'vc_frontend_editor_render' );
 
 		add_filter( 'admin_title', array(
-			&$this,
+			$this,
 			'setEditorTitle',
 		) );
 		$this->render( 'editor' );
@@ -456,7 +456,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 * @return string
 	 */
 	function setEditorTitle() {
-		return sprintf( __( 'Edit %s with Visual Composer', 'js_composer' ), $this->post_type->labels->singular_name );
+		return sprintf( __( 'Edit %s with WPBakery Page Builder', 'js_composer' ), $this->post_type->labels->singular_name );
 	}
 
 	/**
@@ -482,7 +482,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	 */
 	function renderEditButton( $link ) {
 		if ( $this->showButton( get_the_ID() ) ) {
-			return $link . ' <a href="' . self::getInlineUrl() . '" id="vc_load-inline-editor" class="vc_inline-link">' . __( 'Edit with Visual Composer', 'js_composer' ) . '</a>';
+			return $link . ' <a href="' . self::getInlineUrl() . '" id="vc_load-inline-editor" class="vc_inline-link">' . __( 'Edit with WPBakery Page Builder', 'js_composer' ) . '</a>';
 		}
 
 		return $link;
@@ -497,7 +497,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		$post = get_post();
 		if ( $this->showButton( $post->ID ) ) {
 			$actions['edit_vc'] = '<a
-		href="' . $this->getInlineUrl( '', $post->ID ) . '">' . __( 'Edit with Visual Composer', 'js_composer' ) . '</a>';
+		href="' . $this->getInlineUrl( '', $post->ID ) . '">' . __( 'Edit with WPBakery Page Builder', 'js_composer' ) . '</a>';
 		}
 
 		return $actions;
@@ -511,16 +511,18 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	function showButton( $post_id = null ) {
 		$type = get_post_type();
 
-		return self::inlineEnabled() && ! in_array( get_post_status(), array(
-			'private',
-			'trash',
-		) ) && ! in_array( $type, array(
-			'templatera',
-			'vc_grid_item',
-		) ) && vc_user_access()->wpAny( array(
+		$result = self::inlineEnabled() && ! in_array( get_post_status(), array(
+				'private',
+				'trash',
+			) ) && ! in_array( $type, array(
+				'templatera',
+				'vc_grid_item',
+			) ) && vc_user_access()->wpAny( array(
 				'edit_post',
 				$post_id,
 			) )->get() && vc_check_post_type( $type );
+
+		return apply_filters( 'vc_show_button_fe', $result, $post_id, $type );
 	}
 
 	/**
@@ -534,7 +536,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 			if ( $this->showButton( get_the_ID() ) ) {
 				$wp_admin_bar->add_menu( array(
 					'id' => 'vc_inline-admin-bar-link',
-					'title' => __( 'Edit with Visual Composer', 'js_composer' ),
+					'title' => __( 'Edit with WPBakery Page Builder', 'js_composer' ),
 					'href' => self::getInlineUrl(),
 					'meta' => array( 'class' => 'vc_inline-link' ),
 				) );
@@ -617,17 +619,13 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 				echo '<div data-type="files">';
 				_print_styles();
 				print_head_scripts();
-				print_late_styles();
-				print_footer_scripts();
-				do_action( 'wp_print_footer_scripts' );
+				wp_footer();
 				echo '</div>';
 				$output = ob_get_clean();
 				die( apply_filters( 'vc_frontend_editor_load_shortcode_ajax_output', $output ) );
 			} elseif ( 'vc_frontend_load_template' === $action ) {
 				$this->setPost();
-				visual_composer()
-					->templatesPanelEditor()
-					->renderFrontendTemplate();
+				visual_composer()->templatesPanelEditor()->renderFrontendTemplate();
 			} else if ( '' !== $action ) {
 				do_action( 'vc_front_load_page_' . esc_attr( vc_post_param( 'action' ) ) );
 			}
@@ -685,7 +683,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 							$shortcode['string'] = preg_replace( '/\]/', '][vc_container_anchor]', $shortcode['string'], 1 );
 						}
 						$output .= '<div class="vc_element"' . self::cleanStyle() . ' data-shortcode-controls="' . esc_attr( json_encode( $shortcode_obj->shortcodeClass()
-						                                                                                                                                ->getControlsList() ) ) . '" data-container="' . $is_container . '" data-model-id="' . $shortcode['id'] . '">' . $this->wrapperStart() . do_shortcode( stripslashes( $shortcode['string'] ) ) . $this->wrapperEnd() . '</div>';
+								->getControlsList() ) ) . '" data-container="' . $is_container . '" data-model-id="' . $shortcode['id'] . '">' . $this->wrapperStart() . do_shortcode( stripslashes( $shortcode['string'] ) ) . $this->wrapperEnd() . '</div>';
 						$output .= '</div>';
 					}
 				}
@@ -727,7 +725,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		wp_register_script( 'wpb_json-js', vc_asset_url( 'lib/bower/json-js/json2.min.js' ), array(), WPB_VC_VERSION, true );
 		// used in post settings editor
 		wp_register_script( 'ace-editor', vc_asset_url( 'lib/bower/ace-builds/src-min-noconflict/ace.js' ), array( 'jquery' ), WPB_VC_VERSION, true );
-		wp_register_script( 'webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js' ); // Google Web Font CDN
+		wp_register_script( 'webfont', 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js' ); // Google Web Font CDN
 		wp_register_script( 'wpb_scrollTo_js', vc_asset_url( 'lib/bower/scrollTo/jquery.scrollTo.min.js' ), array( 'jquery' ), WPB_VC_VERSION, true );
 		wp_register_script( 'vc_accordion_script', vc_asset_url( 'lib/vc_accordion/vc-accordion.min.js' ), array( 'jquery' ), WPB_VC_VERSION, true );
 		wp_register_script( 'vc-frontend-editor-min-js', vc_asset_url( 'js/dist/frontend-editor.min.js' ), array(), WPB_VC_VERSION, true );
@@ -779,7 +777,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 	}
 
 	public function registerCss() {
-		wp_register_style( 'ui-custom-theme', vc_asset_url( 'css/ui-custom-theme/jquery-ui-less.custom.min.css' ), false, WPB_VC_VERSION, false );
+		wp_register_style( 'ui-custom-theme', vc_asset_url( 'css/ui-custom-theme/jquery-ui-less.custom.min.css' ), false, WPB_VC_VERSION );
 		wp_register_style( 'animate-css', vc_asset_url( 'lib/bower/animate-css/animate.min.css' ), false, WPB_VC_VERSION, 'screen' );
 		wp_register_style( 'font-awesome', vc_asset_url( 'lib/bower/font-awesome/css/font-awesome.min.css' ), false, WPB_VC_VERSION, 'screen' );
 
@@ -901,10 +899,16 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		foreach ( $found[2] as $index => $s ) {
 			$id = md5( time() . '-' . $this->tag_index ++ );
 			$content = $found[5][ $index ];
+			$attrs = shortcode_parse_atts( $found[3][ $index ] );
+			if ( empty( $attrs ) ) {
+				$attrs = array();
+			} elseif ( ! is_array( $attrs ) ) {
+				$attrs = (array) $attrs;
+			}
 			$shortcode = array(
 				'tag' => $s,
 				'attrs_query' => $found[3][ $index ],
-				'attrs' => shortcode_parse_atts( $found[3][ $index ] ),
+				'attrs' => $attrs,
 				'id' => $id,
 				'parent_id' => $parent_id,
 			);
@@ -931,7 +935,7 @@ class Vc_Frontend_Editor implements Vc_Editor_Interface {
 		$shortcode = apply_filters( 'vc_frontend_editor_to_string', $shortcode, $shortcode_obj );
 
 		$output = ( '<div class="vc_element" data-tag="' . $shortcode['tag'] . '" data-shortcode-controls="' . esc_attr( json_encode( $shortcode_obj->shortcodeClass()
-		                                                                                                                                            ->getControlsList() ) ) . '" data-model-id="' . $shortcode['id'] . '"' . self::cleanStyle() . '>' . $this->wrapperStart() . '[' . $shortcode['tag'] . ' ' . $shortcode['attrs_query'] . ']' . ( $is_container ? '[vc_container_anchor]' . $this->parseShortcodesString( $content, $is_container, $shortcode['id'] ) : do_shortcode( $content ) ) . '[/' . $shortcode['tag'] . ']' . $this->wrapperEnd() . '</div>' );
+				->getControlsList() ) ) . '" data-model-id="' . $shortcode['id'] . '"' . self::cleanStyle() . '>' . $this->wrapperStart() . '[' . $shortcode['tag'] . ' ' . $shortcode['attrs_query'] . ']' . ( $is_container ? '[vc_container_anchor]' . $this->parseShortcodesString( $content, $is_container, $shortcode['id'] ) : do_shortcode( $content ) ) . '[/' . $shortcode['tag'] . ']' . $this->wrapperEnd() . '</div>' );
 
 		return $output;
 	}

@@ -2,6 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	die( '-1' );
 }
+
 /** @var $editor Vc_Frontend_Editor */
 global $menu, $submenu, $parent_file, $post_ID, $post, $post_type, $post_type_object;
 $post_ID = $editor->post_id;
@@ -21,10 +22,12 @@ vc_include_template( 'editors/partials/access-manager-js.tpl.php' );
 
 ?>
 	<div id="vc_preloader"></div>
+	<div id="vc_overlay_spinner" class="vc_ui-wp-spinner vc_ui-wp-spinner-dark vc_ui-wp-spinner-lg" style="display:none;"></div>
 	<script type="text/javascript">
 		document.getElementById( 'vc_preloader' ).style.height = window.screen.availHeight;
 		var vc_mode = '<?php echo vc_mode() ?>',
 			vc_iframe_src = '<?php echo esc_attr( $editor->url ); ?>';
+		window.wpbGutenbergEditorUrl = '<?php echo set_url_scheme( admin_url( 'post-new.php?post_type=wpb_gutenberg_param' ) ); ?>';
 	</script>
 	<input type="hidden" name="vc_post_title" id="vc_title-saved" value="<?php echo esc_attr( $post_title ); ?>"/>
 	<input type="hidden" name="vc_post_id" id="vc_post-id" value="<?php echo esc_attr( $editor->post_id ); ?>"/>
@@ -54,6 +57,10 @@ if ( vc_user_access()->part( 'templates' )->can()->get() ) {
 }
 // [/templates panel editor render]
 
+// [preset panel editor render]
+visual_composer()->presetPanelEditor()->renderUIPreset();
+// [/preset panel editor render]
+
 // [post settings panel render]
 if ( vc_user_access()->part( 'post_settings' )->can()->get() ) {
 	require_once vc_path_dir( 'EDITORS_DIR', 'popups/class-vc-post-settings.php' );
@@ -74,11 +81,11 @@ vc_include_template( 'editors/partials/frontend_controls.tpl.php' );
 // [shortcodes presets data]
 if ( vc_user_access()->part( 'presets' )->can()->get() ) {
 	require_once vc_path_dir( 'AUTOLOAD_DIR', 'class-vc-settings-presets.php' );
-	$vc_settings_presets = Vc_Settings_Preset::listDefaultSettingsPresets();
 	$vc_vendor_settings_presets = Vc_Settings_Preset::listDefaultVendorSettingsPresets();
+	$vc_all_presets = Vc_Settings_Preset::listAllPresets();
 } else {
-	$vc_settings_presets = array();
 	$vc_vendor_settings_presets = array();
+	$vc_all_presets = array();
 }
 // [/shortcodes presets data]
 
@@ -89,25 +96,31 @@ if ( vc_user_access()->part( 'presets' )->can()->get() ) {
 		var vc_user_mapper = <?php echo json_encode( WPBMap::getUserShortCodes() ) ?>,
 			vc_mapper = <?php echo json_encode( WPBMap::getShortCodes() ) ?>,
 			vc_vendor_settings_presets = <?php echo json_encode( $vc_vendor_settings_presets ) ?>,
-			vc_settings_presets = <?php echo json_encode( $vc_settings_presets ) ?>,
+		    vc_all_presets = <?php echo json_encode( $vc_all_presets ) ?>,
 			vc_roles = [], // @todo fix_roles BC for roles
-			vcAdminNonce = '<?php echo vc_generate_nonce( 'vc-admin-nonce' ); ?>';
+			vcAdminNonce = '<?php echo vc_generate_nonce( 'vc-admin-nonce' ); ?>',
+			vc_post_id = <?php echo $post_ID; ?>;
 	</script>
 
 <?php vc_include_template( 'editors/partials/vc_settings-image-block.tpl.php' ) ?>
+<!-- BC for older plugins 5.5 !-->
+<input type="hidden" id="post_ID" name="post_ID" value="<?php echo $post_ID; ?>" />
 	<div style="height: 1px; visibility: hidden; overflow: hidden;">
 		<?php
-
 		// Disable notice in edit-form-advanced.php
 		$is_IE = false;
-
-		require_once ABSPATH . 'wp-admin/edit-form-advanced.php';
-
+		wp_editor( '', 'vc-hidden-editor', array(
+			'editor_height' => 300,
+			'tinymce' => array(
+				'resize' => false,
+				'wp_autoresize_on' => false,
+				'add_unload_trigger' => false,
+				'wp_keep_scroll_position' => ! $is_IE,
+			),
+		) );
 		// Fix: WP 4.0
 		wp_dequeue_script( 'editor-expand' );
-
 		do_action( 'vc_frontend_editor_render_template' );
-
 		?>
 	</div>
 <?php

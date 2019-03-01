@@ -28,8 +28,16 @@
     margin-bottom: 0;
     min-width: 190px;
     text-transform: capitalize;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    .vc-composer-icon {
+      font-size: 21px;
+      padding: 0 .5em 0 0;
+    }
   }
-  // icon behaviour {
+  // icon behaviour
   .vc_ui-icon-pixel {
     padding-right: .5em;
   }
@@ -38,8 +46,10 @@
 .vc_welcome-brand {
   margin-top: @vc-welcome-gap;
   margin-bottom: @vc-welcome-gap * 1.5;
+  text-align: center;
   img {
     box-shadow: none;
+    display: inline-block;
   }
 }
 
@@ -55,19 +65,29 @@
 
 .vc_add-element-not-empty-button {
   display: inline-block;
+  position: relative;
+  font-size: 18px;
+  color: #FFFFFF;
   width: 39px;
   height: 38px;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
-  background-image: url(../vc/fe/empty_row_sprite.png);
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-color: #C9C9C9;
   cursor: pointer;
   border: none !important;
-  transition-property: none;
+  .border-radius(5px);
+  .transition(background-color 0.5s);
   &:hover {
-    background-position: bottom center;
+    background-color: #E4E4E4;
+    color: #FFFFFF;
+  }
+
+  .vc-composer-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    .translate(-50%, -50%);
   }
 }
 

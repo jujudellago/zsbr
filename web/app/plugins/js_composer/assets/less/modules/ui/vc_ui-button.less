@@ -34,7 +34,7 @@
 @vcui-button-message-danger-color: darken(desaturate(@vcui-button-danger-background, 20%), 10%);
 // State action
 @vcui-button-action-color: #fff;
-@vcui-button-action-background: #305288;
+@vcui-button-action-background: #0473aa;
 @vcui-button-message-action-color: darken(desaturate(@vcui-button-action-background, 10%), 5%);
 // State info
 @vcui-button-info-color: #fff;
@@ -70,6 +70,9 @@
   transition-timing-function: ease-in-out;
   outline: none;
   font-weight: 400;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 
   #vc_ui-button > .make-size(
   @padding-vertical: @vcui-button-size-md-vertical;
@@ -80,6 +83,9 @@
   &:hover,
   &:focus {
     border: @vcui-button-border solid transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
 }
 
@@ -197,6 +203,7 @@
   }
 
   &[disabled] {
+    opacity: @vcui-control-button-opacity;
     cursor: default;
   }
   // pixel icon behaviour
@@ -204,7 +211,6 @@
     vertical-align: top;
   }
 }
-
 
 
 
