@@ -12,6 +12,11 @@ set :branch, :master
 
      
 
+SSHKit.config.command_map[:composer] = "/usr/local/php56/bin/php -c /home/terolabs/tst.zermattsummit.org/utils/php/php.ini /home/terolabs/utils/php/composer/composer.phar"
+
+SSHKit.config.command_map[:wp] ="~/bin/wp.sh"
+
+set :tmp_dir, "/home/terolabs/tmp"
 
 # Use :debug for more verbose output when troubleshooting
 set :log_level, :info

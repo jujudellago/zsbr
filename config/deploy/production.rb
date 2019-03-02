@@ -15,13 +15,6 @@ server "94.103.96.180", user: 'terolabs', roles: %w{web app db}
 
 
 
-SSHKit.config.command_map[:composer] = "php56 /home/terolabs/utils/php/composer/composer.phar"
-
-SSHKit.config.command_map[:wp] ="~/bin/wp.sh"
-
-
-set :tmp_dir, "/home/terolabs/tmp"
-
 
 set :deploy_to, -> { "/home/terolabs/zermattsummit.org/zermattsummit" }
 
