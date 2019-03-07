@@ -536,6 +536,11 @@ ul.bigger li a{
 	text-align:center;	
 }
 
+.centered,
+.centered .wpb_wrapper{
+		text-align:center;	
+}
+
 .white-rounded-box{
 	display: inline-block;
 

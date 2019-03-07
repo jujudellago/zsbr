@@ -216,9 +216,10 @@ class RevSliderFront extends RevSliderBaseFront{
 			self::createTable(RevSliderGlobals::TABLE_CSS_NAME);
 			self::createTable(RevSliderGlobals::TABLE_LAYER_ANIMS_NAME);
 			self::createTable(RevSliderGlobals::TABLE_NAVIGATION_NAME);
+			
+			update_option('rs_tables_created', true);
+			update_option('revslider_change_database', false);
 		}
-		update_option('rs_tables_created', true);
-		update_option('revslider_change_database', false);
 		
 		self::updateTables();
 	}

@@ -1003,8 +1003,6 @@ img.tp-slider-alternative-image	{
 -	BASIC SETTINGS FOR THE BANNER	-
 ***********************************************/
 
- 
-
 .tp-caption img {
 	background: transparent;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
@@ -1315,3 +1313,5 @@ https://una.im/CSSgram/
 .tp-kbimg-wrap:before,
 .tp-kbimg-wrap:after {height:500%;width:500%}
 
+
+.rs-background-video-layer iframe {visibility:inherit !important;}

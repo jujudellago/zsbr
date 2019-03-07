@@ -6,7 +6,7 @@
 
 
 Function wp_schools_enqueue_scripts() {
-	wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css?s=3117'  );
+	wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css?s=3127'  );
 	wp_enqueue_style( 'childstyle' );
 	
 	wp_register_script("matchheight", get_stylesheet_directory_uri() ."/js/jquery.matchHeight-min.js",array('jquery'),true);
@@ -99,7 +99,7 @@ function new_convert_chars($text)
 }
 
 remove_filter('the_content', 'wpautop');
-add_filter('the_content', 'newautop');
+#add_filter('the_content', 'newautop');
 
 remove_filter('the_content', 'wptexturize');
 add_filter('the_content', 'newtexturize');

@@ -2,7 +2,7 @@
 /**
  * @author    ThemePunch <info@themepunch.com>
  * @link      http://www.themepunch.com/
- * @version: 1.0.4 (7.9.2017)
+ * @version: 1.0.5 (13.6.2018)
  * @copyright 2017 ThemePunch
  */
 
@@ -92,11 +92,15 @@ if(!class_exists('TPColorpicker')){
 				return TPColorpicker::processRgba(TPColorpicker::sanitizeHex($color), $opacity);
 				
 			}
-			else {		
+			else if(strpos($color, 'rgb') !== false) {		
+
 				$color = TPColorpicker::rgbValues($color, 3);
 				return TPColorpicker::rgbaString($color[0], $color[1], $color[2], $opacity);
 				
 			}
+			
+			return 'transparent';
+			
 		}
 
 

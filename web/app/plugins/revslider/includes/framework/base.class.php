@@ -291,17 +291,16 @@ class RevSliderBase {
 		global $wpdb;
 		
 		$attachment_id = 0;
-		
+		// If there is no url, return.
+		if('' == $image_url || !$image_url)
+			return $attachment_id;
+			
 		if(function_exists('attachment_url_to_postid')){
 			$attachment_id = attachment_url_to_postid($image_url); //0 if failed
 		}
 		if ( 0 == $attachment_id ){ //try to get it old school way
 			//for WP < 4.0.0
 			$attachment_id = false;
-
-			// If there is no url, return.
-			if ( '' == $image_url )
-				return;
 
 			// Get the upload directory paths
 			$upload_dir_paths = wp_upload_dir();
