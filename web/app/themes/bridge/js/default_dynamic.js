@@ -29,8 +29,8 @@ var add_for_admin_bar = 0;
 
 var logo_height = 130; // proya logo height
 var logo_width = 280; // proya logo width
-	logo_height = 200;
-	logo_width = 376;
+	logo_height = 90;
+	logo_width = 169;
 	
 	header_top_height = 33;
 var loading_text;
@@ -116,7 +116,7 @@ function codeAddress(data) {
 			var marker = new google.maps.Marker({
 				map: map, 
 				position: results[0].geometry.location,
-								icon:  'http://www.zermattsummit.org/wp-content/uploads/2014/10/pin-zs.png',
+								icon:  'http://zsbedro.yabo-sites.loc/wp-content/uploads/2014/10/pin-zs.png',
 								title: data['store_title']
 			});
 			google.maps.event.addListener(marker, 'click', function() {
@@ -149,8 +149,8 @@ function showContactMap() {
 }
 
 var no_ajax_pages = [];
-var qode_root = 'http://www.zermattsummit.org/';
-var theme_root = 'http://www.zermattsummit.org/wp-content/themes/bridge/';
+var qode_root = 'http://zsbedro.yabo-sites.loc/';
+var theme_root = 'http://zsbedro.yabo-sites.loc/app/themes/bridge/';
 var header_style_admin = "";
 if(typeof no_ajax_obj !== 'undefined') {
 	no_ajax_pages = no_ajax_obj.no_ajax_pages;

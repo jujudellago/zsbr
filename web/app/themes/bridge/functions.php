@@ -330,7 +330,7 @@ if (!function_exists('qode_scripts')) {
             wp_enqueue_script("html5", QODE_ROOT."/js/html5.js",array(),false,false);
         }
         if((isset($qode_options_proya['enable_google_map']) && $qode_options_proya['enable_google_map'] == "yes") || qode_is_ajax_enabled() || qode_has_google_map_shortcode()) :
-            wp_enqueue_script("google_map_api", "https://maps.googleapis.com/maps/api/js?sensor=false",array(),false,true);
+            wp_enqueue_script("google_map_api", "https://maps.googleapis.com/maps/api/js?v=3.24&sensor=false&key=AIzaSyCcQ0C9zKS4qIAJHFsHqzicliDKrC3NvSY",array(),false,true);
         endif;
         
 		if (file_exists(dirname(__FILE__) ."/js/default_dynamic.js") && qode_is_js_folder_writable() && !is_multisite()) {
