@@ -18,6 +18,7 @@ web/app/uploads/*
 !web/app/plugins/speakout
 !web/app/plugins/revslider
 !web/app/plugins/google-picasa-albums-viewer
+!web/app/plugins/easy-social-share-buttons
 
 config/secrets.yml
 *.sql
